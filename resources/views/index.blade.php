@@ -23,8 +23,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/img.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/img.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -56,20 +56,20 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">FlexStart</h1>
-      </a>
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/img.png" alt="">
+            <!-- <h1 class="sitename">CX stations</h1> -->
+          </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">{{ trans('mycustom.home') }}<br></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          {{-- <li><a href="#portfolio">Portfolio</a></li> --}}
+          {{-- <li><a href="#team">Team</a></li> --}}
+          {{-- <li><a href="blog.html">Blog</a></li> --}}
           <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -81,7 +81,7 @@
                 @endforeach
             </ul>
           </li>
-          <li class="listing-dropdown"><a href="#"><span>Listing Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          {{-- <li class="listing-dropdown"><a href="#"><span>Listing Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li>
                 <a href="#">Column 1 link 1</a>
@@ -109,8 +109,8 @@
                 <a href="#">Column 5 link 3</a>
               </li>
             </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          </li> --}}
+          {{-- <li><a href="#contact">Contact</a></li> --}}
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -125,152 +125,155 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-            <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h1 data-aos="fade-up">Building Your Brand Strength</h1>
+              <p data-aos="fade-up" data-aos-delay="100">Leverage customer experience stations to enhance their support
+                Turn your customers into loyal brand advocates through interactive marketing and community strategies       </p>
+              <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+                <!-- <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a> -->
+                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+              <img src="{{ asset('assets/img/hero (1).png') }}" class="img-fluid animated" alt="">
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
         </div>
-      </div>
 
-    </section><!-- /Hero Section -->
+      </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Who We Are</h3>
-              <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h2>
-              <p>
-                Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
-              </p>
-              <div class="text-center text-lg-start">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Read More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+                <h2>About Us</h2>
+                <h3>cx stations is a dynamic marketing platform dedicated to harnessing community engagement and customer intelligence to elevate brand loyalty and advocacy.</h3>
+                <p>
+                  Established with the aim of transforming marketing through authentic connections between enterprises and their clientele, our mission is to pioneer meaningful relationships that redefine industry standards.
+                </p>
+                <div class="text-center text-lg-start">
+                  <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+              <img src="{{ asset('assets/img/aboutt.png') }}" class="img-fluid" alt="">
+            </div>
 
+          </div>
         </div>
-      </div>
 
-    </section><!-- /About Section -->
+      </section><!-- /About Section -->
 
     <!-- Values Section -->
     <section id="values" class="values section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Values</h2>
-        <p>What we value most<br></p>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Join us</h2>
+          <p>Contribute your insightful reviews and feedback on previous shopping experiences to earn reward points<br></p>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
-              <h3>Ad cupiditate sed est odio</h3>
-              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-            </div>
-          </div><!-- End Card Item -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card">
+                <img src="{{ asset('assets/img/1.png') }}" class="img-fluid" alt="">
+                <h3>A premium user experience</h3>
+                <p>Ensuring a premium user experience through an easy-to-use interface and attractive design that facilitates the process of rating and interaction</p>
+              </div>
+            </div><!-- End Card Item -->
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>Voluptatem voluptatum alias</h3>
-              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-            </div>
-          </div><!-- End Card Item -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card">
+                <img src="{{ asset('assets/img/2.png') }}" class="img-fluid" alt="">
+                <h3>Reward points upon rating</h3>
+                <p>discover exclusive offers, earn points, and share past shopping experiences with friends</p>
+              </div>
+            </div><!-- End Card Item -->
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Fugit cupiditate alias nobis.</h3>
-              <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-            </div>
-          </div><!-- End Card Item -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card">
+                <img src="{{ asset('assets/img/3.png') }}" class="img-fluid" alt="">
+                <h3>Redeem points</h3>
+                <p>
+                  You can redeem points for prizes, discounts, gifts, and exclusive experiences</p>
+              </div>
+            </div><!-- End Card Item -->
+
+          </div>
 
         </div>
 
-      </div>
-
-    </section><!-- /Values Section -->
+      </section><!-- /Values Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
+                <div>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p>
+  The easiest ways to receive your payments.</p>
+                </div>
               </div>
-            </div>
-          </div><!-- End Stats Item -->
+            </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0" style="color: #ee6c20;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-credit-card-2-front color-purple flex-shrink-0" style="color: #ee6c20;"></i>
+                <div>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p>Check your points balance</p>
+                </div>
               </div>
-            </div>
-          </div><!-- End Stats Item -->
+            </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0" style="color: #15be56;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
+                <div>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p>Adding comments to enhance the shopping experience</p>
+                </div>
               </div>
-            </div>
-          </div><!-- End Stats Item -->
+            </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0" style="color: #bb0852;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
+                <div>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p>Convert your points into a purchase voucher</p>
+                </div>
               </div>
-            </div>
-          </div><!-- End Stats Item -->
+            </div><!-- End Stats Item -->
+
+          </div>
 
         </div>
 
-      </div>
+      </section><!-- /Stats Section -->
 
-    </section><!-- /Stats Section -->
-
-    <!-- Features Section -->
+    {{-- <!-- Features Section -->
     <section id="features" class="features section">
 
       <!-- Section Title -->
@@ -339,9 +342,9 @@
 
       </div>
 
-    </section><!-- /Features Section -->
+    </section><!-- /Features Section --> --}}
 
-    <!-- Alt Features Section -->
+    {{-- <!-- Alt Features Section -->
     <section id="alt-features" class="alt-features section">
 
       <div class="container">
@@ -412,82 +415,88 @@
 
       </div>
 
-    </section><!-- /Alt Features Section -->
+    </section><!-- /Alt Features Section --> --}}
 
     <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Check Our Services<br></p>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Check Our Services<br></p>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-chat-left-dots icon"></i>
+                <h3>CX stations</h3>
+                <p>
+                  A company offering interactive marketing solutions, helping businesses communicate with their customers and build brand loyalty.
+                </p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-orange position-relative">
+                <i class="bi bi-broadcast icon"></i>
+                <h3>Interactive questions</h3>
+                <p>We use interactive questions to better understand your customers' needs and build strong relationships with them.</p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-teal position-relative">
+                <i class="bi bi-people icon"></i>
+                <h3>Community-based marketing</h3>
+                <p>We help you build a community around your brand and create brand advocates who are loyal to your brand</p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
             </div>
-          </div><!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-red position-relative">
+                <i class="bi bi-emoji-laughing icon"></i>
+                <h3>Understanding customer emotions</h3>
+                <p>We use data analytics to understand your customers' thoughts and feelings so that we can provide better experiences.</p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item item-indigo position-relative">
+                <i class="bi bi-chat-left-text icon"></i>
+                <h3>With CX Stations, you can</h3>
+                <p>You can increase customer engagement and improve customer loyalty with CX Stations.</p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
             </div>
-          </div><!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <h3>Asperiores Commodi</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item item-pink position-relative">
+                <i class="bi bi-graph-up-arrow icon"></i>
+                <h3>  You can also through us</h3>
+                <p>
+                  You can also increase your sales and build a stronger brand through us</p>
+                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+              </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <h3>Velit Doloremque.</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
-      </div>
+      </section>
+  <!-- /Services Section -->
 
-    </section><!-- /Services Section -->
-
-    <!-- Pricing Section -->
+    {{-- <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
@@ -577,9 +586,9 @@
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section><!-- /Pricing Section --> --}}
 
-    <!-- Faq Section -->
+    {{-- <!-- Faq Section -->
     <section id="faq" class="faq section">
 
       <!-- Section Title -->
@@ -660,9 +669,9 @@
 
       </div>
 
-    </section><!-- /Faq Section -->
+    </section><!-- /Faq Section --> --}}
 
-    <!-- Portfolio Section -->
+    {{-- <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -835,9 +844,9 @@
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Portfolio Section --> --}}
 
-    <!-- Testimonials Section -->
+    {{-- <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
       <!-- Section Title -->
@@ -962,9 +971,9 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section><!-- /Testimonials Section --> --}}
 
-    <!-- Team Section -->
+    {{-- <!-- Team Section -->
     <section id="team" class="team section">
 
       <!-- Section Title -->
@@ -1057,9 +1066,9 @@
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section><!-- /Team Section --> --}}
 
-    <!-- Clients Section -->
+    {{-- <!-- Clients Section -->
     <section id="clients" class="clients section">
 
       <!-- Section Title -->
@@ -1119,9 +1128,9 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /Clients Section --> --}}
 
-    <!-- Recent Posts Section -->
+    {{-- <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
 
       <!-- Section Title -->
@@ -1231,9 +1240,9 @@
 
       </div>
 
-    </section><!-- /Recent Posts Section -->
+    </section><!-- /Recent Posts Section --> --}}
 
-    <!-- Contact Section -->
+    {{-- <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -1325,11 +1334,11 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Contact Section --> --}}
 
   </main>
 
-  <footer id="footer" class="footer">
+  {{-- <footer id="footer" class="footer">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -1407,7 +1416,7 @@
       </div>
     </div>
 
-  </footer>
+  </footer> --}}
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
