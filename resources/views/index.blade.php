@@ -1,6 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+@if( app()->getlocale() == "ar" )
+            @php
+            $right = "left";
+            $left = "right";
+            $isRTL = true;
+            @endphp
+        <html lang="ar" dir="rtl">
+    @else
+        <html lang="en" dir="ltr">
+        @php
+            $right = "right";
+            $left = "left";
+            $isRTL = false;
 
+        @endphp
+     @endif
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -50,7 +64,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">cxstation<br></a></li>
+          <li><a href="#hero" class="active">{{ trans('mycustom.home') }}<br></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -58,11 +72,13 @@
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">English</a></li>
-
-              <li><a href="#">العربية</a></li>
-              {{-- <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li> --}}
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                    <li>
+                        <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                            {{ $properties['native'] }}
+                        </a>
+                    </li>
+                @endforeach
             </ul>
           </li>
           <li class="listing-dropdown"><a href="#"><span>Listing Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
