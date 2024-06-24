@@ -87,7 +87,7 @@
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Get Started</a>
+            <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Started</a>
         </div>
     </header>
 
