@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-@if( app()->getlocale() == "ar" )
-            @php
-            $right = "left";
-            $left = "right";
-            $isRTL = true;
-            @endphp
-        <html lang="ar" dir="rtl">
-    @else
-        <html lang="en" dir="ltr">
-        @php
-            $right = "right";
-            $left = "left";
-            $isRTL = false;
+@if (app()->getlocale() == 'ar')
+    @php
+        $right = 'left';
+        $left = 'right';
+        $isRTL = true;
+    @endphp
+    <html lang="ar" dir="rtl">
+@else
+    <html lang="en" dir="ltr">
+    @php
+        $right = 'right';
+        $left = 'left';
+        $isRTL = false;
 
-        @endphp
-     @endif
+    @endphp
+@endif
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -29,10 +30,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    @if(app()->getLocale() == "ar")
+    @if (app()->getLocale() == 'ar')
         <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.rtl.min.css') }}" rel="stylesheet">
     @else
         <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -43,10 +46,10 @@
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Main CSS File -->
-    @if(app()->getLocale() == "ar")
-    <link href="{{ asset('assets/css/arabic.css') }}" rel="stylesheet">
+    @if (app()->getLocale() == 'ar')
+        <link href="{{ asset('assets/css/arabic.css') }}" rel="stylesheet">
     @else
-    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     @endif
 
 
@@ -57,12 +60,13 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
-  </head>
+</head>
 
 
 <body class="index-page">
 
-    <header id="header" class="header d-flex align-items-center fixed-top" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+    <header id="header" class="header d-flex align-items-center fixed-top"
+        dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <img src="{{ asset('assets/img/img.png') }}" alt="">
@@ -75,9 +79,10 @@
                     <li class="dropdown">
                         <a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <li>
-                                    <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                    <a rel="alternate" hreflang="{{ $localeCode }}"
+                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                         {{ $properties['native'] }}
                                     </a>
                                 </li>
@@ -91,383 +96,413 @@
         </div>
     </header>
 
-  <main class="main">
+    <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
 
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up">Building Your Brand Strength</h1>
-              <p data-aos="fade-up" data-aos-delay="100">Leverage customer experience stations to enhance their support
-                Turn your customers into loyal brand advocates through interactive marketing and community strategies       </p>
-              <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-                <!-- <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a> -->
-                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-              </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-              <img src="{{ asset('assets/img/hero (1).png') }}" class="img-fluid animated" alt="">
-            </div>
-          </div>
-        </div>
-
-      </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-        <div class="container" data-aos="fade-up">
-          <div class="row gx-0">
-
-            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-              <div class="content">
-                <h2>About Us</h2>
-                <h3>cx stations is a dynamic marketing platform dedicated to harnessing community engagement and customer intelligence to elevate brand loyalty and advocacy.</h3>
-                <p>
-                  Established with the aim of transforming marketing through authentic connections between enterprises and their clientele, our mission is to pioneer meaningful relationships that redefine industry standards.
-                </p>
-                <div class="text-center text-lg-start">
-                  <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>Read More</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up">Building Your Brand Strength</h1>
+                        <p data-aos="fade-up" data-aos-delay="100">Leverage customer experience stations to enhance
+                            their support
+                            Turn your customers into loyal brand advocates through interactive marketing and community
+                            strategies </p>
+                        <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+                            <!-- <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                        <img src="{{ asset('assets/img/hero (1).png') }}" class="img-fluid animated" alt="">
+                    </div>
                 </div>
-              </div>
             </div>
 
-            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-              <img src="{{ asset('assets/img/aboutt.png') }}" class="img-fluid" alt="">
+        </section><!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row gx-0">
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="content">
+                            <h2>About Us</h2>
+                            <h3>cx stations is a dynamic marketing platform dedicated to harnessing community engagement
+                                and customer intelligence to elevate brand loyalty and advocacy.</h3>
+                            <p>
+                                Established with the aim of transforming marketing through authentic connections between
+                                enterprises and their clientele, our mission is to pioneer meaningful relationships that
+                                redefine industry standards.
+                            </p>
+                            <div class="text-center text-lg-start">
+                                <a href="#"
+                                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Read More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="{{ asset('assets/img/aboutt.png') }}" class="img-fluid" alt="">
+                    </div>
+
+                </div>
             </div>
 
-          </div>
-        </div>
+        </section><!-- /About Section -->
 
-      </section><!-- /About Section -->
+        <!-- Values Section -->
+        <section id="values" class="values section">
 
-    <!-- Values Section -->
-    <section id="values" class="values section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Join us</h2>
+                <p>Contribute your insightful reviews and feedback on previous shopping experiences to earn reward
+                    points<br></p>
+            </div><!-- End Section Title -->
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Join us</h2>
-          <p>Contribute your insightful reviews and feedback on previous shopping experiences to earn reward points<br></p>
-        </div><!-- End Section Title -->
+            <div class="container">
 
-        <div class="container">
+                <div class="row gy-4">
 
-          <div class="row gy-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="{{ asset('assets/img/1.png') }}" class="img-fluid" alt="">
+                            <h3>A premium user experience</h3>
+                            <p>Ensuring a premium user experience through an easy-to-use interface and attractive design
+                                that facilitates the process of rating and interaction</p>
+                        </div>
+                    </div><!-- End Card Item -->
 
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="card">
-                <img src="{{ asset('assets/img/1.png') }}" class="img-fluid" alt="">
-                <h3>A premium user experience</h3>
-                <p>Ensuring a premium user experience through an easy-to-use interface and attractive design that facilitates the process of rating and interaction</p>
-              </div>
-            </div><!-- End Card Item -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="{{ asset('assets/img/2.png') }}" class="img-fluid" alt="">
+                            <h3>Reward points upon rating</h3>
+                            <p>discover exclusive offers, earn points, and share past shopping experiences with friends
+                            </p>
+                        </div>
+                    </div><!-- End Card Item -->
 
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card">
-                <img src="{{ asset('assets/img/2.png') }}" class="img-fluid" alt="">
-                <h3>Reward points upon rating</h3>
-                <p>discover exclusive offers, earn points, and share past shopping experiences with friends</p>
-              </div>
-            </div><!-- End Card Item -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img src="{{ asset('assets/img/3.png') }}" class="img-fluid" alt="">
+                            <h3>Redeem points</h3>
+                            <p>
+                                You can redeem points for prizes, discounts, gifts, and exclusive experiences</p>
+                        </div>
+                    </div><!-- End Card Item -->
 
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="card">
-                <img src="{{ asset('assets/img/3.png') }}" class="img-fluid" alt="">
-                <h3>Redeem points</h3>
-                <p>
-                  You can redeem points for prizes, discounts, gifts, and exclusive experiences</p>
-              </div>
-            </div><!-- End Card Item -->
-
-          </div>
-
-        </div>
-
-      </section><!-- /Values Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row gy-4">
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
-                <div>
-                  <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
-                  <p>
-  The easiest ways to receive your payments.</p>
                 </div>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="bi bi-credit-card-2-front color-purple flex-shrink-0" style="color: #ee6c20;"></i>
-                <div>
-                  <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
-                  <p>Check your points balance</p>
-                </div>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
-                <div>
-                  <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
-                  <p>Adding comments to enhance the shopping experience</p>
-                </div>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
-                <div>
-                  <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
-                  <p>Convert your points into a purchase voucher</p>
-                </div>
-              </div>
-            </div><!-- End Stats Item -->
-
-          </div>
-
-        </div>
-
-      </section><!-- /Stats Section -->
-
-    {{-- <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Our Advacedd Features<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-xl-6 d-flex">
-            <div class="row align-self-center gy-4">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Eos aspernatur rem</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Facilis neque ipsa</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Volup amet volupt</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Rerum omnis sint</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Alias possimus</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Repellendus molli</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section --> --}}
-
-    {{-- <!-- Alt Features Section -->
-    <section id="alt-features" class="alt-features section">
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="row align-self-center gy-5">
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-award"></i>
-                <div>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-card-checklist"></i>
-                <div>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-dribbble"></i>
-                <div>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-filter-circle"></i>
-                <div>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-lightning-charge"></i>
-                <div>
-                  <h4>Molestiae dolor</h4>
-                  <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-patch-check"></i>
-                <div>
-                  <h4>Explicabo consectetur</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                </div>
-              </div><!-- End Feature Item -->
 
             </div>
 
-          </div>
+        </section><!-- /Values Section -->
 
-          <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/alt-features.png" class="img-fluid" alt="">
-          </div>
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
 
-        </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      </div>
+                <div class="row gy-4">
 
-    </section><!-- /Alt Features Section --> --}}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
+                            <div>
+                                <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
+                                <p>
+                                    The easiest ways to receive your payments.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-credit-card-2-front color-purple flex-shrink-0"
+                                style="color: #ee6c20;"></i>
+                            <div>
+                                <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
+                                <p>Check your points balance</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>Check Our Services<br></p>
-        </div><!-- End Section Title -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
+                            <div>
+                                <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
+                                <p>Adding comments to enhance the shopping experience</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
 
-        <div class="container">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
+                            <div>
+                                <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
+                                <p>Convert your points into a purchase voucher</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
 
-          <div class="row gy-4">
+                </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item item-cyan position-relative">
-                <i class="bi bi-chat-left-dots icon"></i>
-                <h3>CX stations</h3>
-                <p>
-                  A company offering interactive marketing solutions, helping businesses communicate with their customers and build brand loyalty.
-                </p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item item-orange position-relative">
-                <i class="bi bi-broadcast icon"></i>
-                <h3>Interactive questions</h3>
-                <p>We use interactive questions to better understand your customers' needs and build strong relationships with them.</p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item item-teal position-relative">
-                <i class="bi bi-people icon"></i>
-                <h3>Community-based marketing</h3>
-                <p>We help you build a community around your brand and create brand advocates who are loyal to your brand</p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
             </div>
-            <!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item item-red position-relative">
-                <i class="bi bi-emoji-laughing icon"></i>
-                <h3>Understanding customer emotions</h3>
-                <p>We use data analytics to understand your customers' thoughts and feelings so that we can provide better experiences.</p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
-            </div><!-- End Service Item -->
+        </section><!-- /Stats Section -->
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-item item-indigo position-relative">
-                <i class="bi bi-chat-left-text icon"></i>
-                <h3>With CX Stations, you can</h3>
-                <p>You can increase customer engagement and improve customer loyalty with CX Stations.</p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
+        <!-- Features Section -->
+        <section id="features" class="features section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Analytical tools</h2>
+                <p> Check Our Analytical tools<br></p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-5">
+
+                    <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+                        <img src="assets/img/features.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-xl-6 d-flex">
+                        <div class="row align-self-center gy-4">
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Deep and Detailed Analysis</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Comprehensive and Accurate Reports</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Strategic Market Analysis and Trends</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Continuous Monitoring and Evaluation</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Advanced Data Analytics and Statistics</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Artificial Intelligence and Machine Learning Techniques</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-item item-pink position-relative">
-                <i class="bi bi-graph-up-arrow icon"></i>
-                <h3>  You can also through us</h3>
-                <p>
-                  You can also increase your sales and build a stronger brand through us</p>
-                {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-              </div>
-            </div><!-- End Service Item -->
+        </section>
+        <!-- /Features Section -->
 
-          </div>
+        <section id="alt-features" class="alt-features section">
 
-        </div>
+            <div class="container">
 
-      </section>
-  <!-- /Services Section -->
+                <div class="row gy-5">
 
-    {{-- <!-- Pricing Section -->
+                    <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="row align-self-center gy-5">
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-award"></i>
+                                <div>
+                                    <h4> Social Interaction and Engagement</h4>
+                                    <p>The application can enhance social interaction through features such as content
+                                        sharing, user comments, and interaction with other social networks, fostering a
+                                        community around your brand.</p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-card-checklist"></i>
+                                <div>
+                                    <h4>Security and Personal Data Protection</h4>
+                                    <p>
+                                        The application provides advanced security measures to protect users' personal
+                                        data, such as strong encryption and strict privacy policies, building trust and
+                                        ensuring data security during interaction with the app.</p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-dribbble"></i>
+                                <div>
+                                    <h4>Access to Customer Service and Technical Support</h4>
+                                    <p>Users can easily access customer service and technical support through the
+                                        application, where they can ask questions, provide feedback, and get immediate
+                                        assistance, enhancing overall customer satisfaction.</p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-filter-circle"></i>
+                                <div>
+                                    <h4>Social Interaction and Engagement</h4>
+                                    <p>The application enhances social interaction through features such as content
+                                        sharing, user comments, and integration with other social networks, fostering
+                                        community building around your brand.</p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-lightning-charge"></i>
+                                <div>
+                                    <h4>Advanced Data Analytics and Statistics</h4>
+                                    <p>We use advanced analytics tools to accurately understand and interpret big data
+                                        and statistics. This enables clients to make informed strategic decisions based
+                                        on deep insights.
+
+                                    </p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-6 icon-box">
+                                <i class="bi bi-patch-check"></i>
+                                <div>
+                                    <h4>Strategic Market Analysis and Trends</h4>
+                                    <p>Thanks to our tools, companies can analyze market trends and estimate emerging
+                                        demands. We offer in-depth analytics that provide insights into opportunities
+                                        and challenges, which can contribute to defining growth and expansion
+                                        strategies.</p>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <img src="{{ asset('assets/img/PHONE.png') }}" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p>Check Our Services<br></p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-cyan position-relative">
+                            <i class="bi bi-chat-left-dots icon"></i>
+                            <h3>CX stations</h3>
+                            <p>
+                                A company offering interactive marketing solutions, helping businesses communicate with
+                                their customers and build brand loyalty.
+                            </p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item item-orange position-relative">
+                            <i class="bi bi-broadcast icon"></i>
+                            <h3>Interactive questions</h3>
+                            <p>We use interactive questions to better understand your customers' needs and build strong
+                                relationships with them.</p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item item-teal position-relative">
+                            <i class="bi bi-people icon"></i>
+                            <h3>Community-based marketing</h3>
+                            <p>We help you build a community around your brand and create brand advocates who are loyal
+                                to your brand</p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item item-red position-relative">
+                            <i class="bi bi-emoji-laughing icon"></i>
+                            <h3>Understanding customer emotions</h3>
+                            <p>We use data analytics to understand your customers' thoughts and feelings so that we can
+                                provide better experiences.</p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-item item-indigo position-relative">
+                            <i class="bi bi-chat-left-text icon"></i>
+                            <h3>With CX Stations, you can</h3>
+                            <p>You can increase customer engagement and improve customer loyalty with CX Stations.</p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-item item-pink position-relative">
+                            <i class="bi bi-graph-up-arrow icon"></i>
+                            <h3> You can also through us</h3>
+                            <p>
+                                You can also increase your sales and build a stronger brand through us</p>
+                            {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Services Section -->
+
+        {{-- <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
@@ -559,277 +594,115 @@
 
     </section><!-- /Pricing Section --> --}}
 
-    {{-- <!-- Faq Section -->
-    <section id="faq" class="faq section">
+        <!-- Faq Section -->
+        <section id="faq" class="faq section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>F.A.Q</h2>
-        <p>Frequently Asked Questions</p>
-      </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>F.A.Q</h2>
+                <p>Frequently Asked Questions</p>
+            </div><!-- End Section Title -->
 
-      <div class="container">
+            <div class="container">
 
-        <div class="row">
+                <div class="row">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="faq-container">
+                        <div class="faq-container">
 
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                            <div class="faq-item faq-active">
+                                <h3>What are the services offered by CX STATIONS?</h3>
+                                <div class="faq-content">
+                                    <p>CX STATIONS is a dynamic marketing platform dedicated to enhancing community
+                                        engagement and understanding customer insights through advanced analytics and
+                                        social interaction. We provide solutions to improve brand loyalty and enhance
+                                        customer interaction.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>How does CX STATIONS help companies achieve their marketing goals?</h3>
+                                <div class="faq-content">
+                                    <p>We offer deep analytics into customer behaviors and campaign performance,
+                                        enabling companies to make informed strategic decisions and achieve effective
+                                        results.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>What is the competitive advantage of CX STATIONS?</h3>
+                                <div class="faq-content">
+                                    <p>We excel in using the latest technologies in analytics and social interaction,
+                                        providing innovative solutions and exceptional customer experiences that
+                                        contribute to the success of our clients in the market.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                        </div>
+
+                    </div><!-- End Faq Column-->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="faq-container">
+
+                            <div class="faq-item">
+                                <h3>Can my company integrate with CX STATIONS?</h3>
+                                <div class="faq-content">
+                                    <p>Yes, we can integrate our services with your existing systems to ensure a
+                                        seamless and effective experience.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>Does CX STATIONS provide services tailored to different company sizes?</h3>
+                                <div class="faq-content">
+                                    <p>Yes, we offer diverse solutions that cater to the needs of small, medium, and
+                                        large companies alike, focusing on achieving tangible results.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3>What are the steps to start benefiting from CX STATIONS services?</h3>
+                                <div class="faq-content">
+                                    <p>You can start by contacting our team for a free consultation, where we will
+                                        assess your needs and provide suitable plans to achieve your marketing goals and
+                                        enhance customer loyalty.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                        </div>
+
+                    </div><!-- End Faq Column-->
+
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
 
             </div>
 
-          </div><!-- End Faq Column-->
+        </section>
+        <!-- /Faq Section -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="faq-container">
+        <!-- Testimonials Section -->
+        {{-- <section id="testimonials" class="testimonials section">
 
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Our Outstanding Team</h2>
+                <p>Why Our Team is Exceptional?<br></p>
+            </div><!-- End Section Title -->
 
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section --> --}}
-
-    {{-- <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Check our latest work</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section --> --}}
-
-    {{-- <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>What they are saying about us<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -854,97 +727,123 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Our team at our company consists of distinguished professionals who possess
+                                    extensive expertise in their fields, ensuring the delivery of the best solutions and
+                                    services to our clients
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Proficiency and Deep Expertise</h3>
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    We take pride in a team dedicated to innovation, continuously striving to develop
+                                    new and creative solutions that meet our clients' challenges and exceed their
+                                    expectations
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Innovation and Creativity</h3>
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Our team excels in adapting swiftly to challenges and changes, enabling us to
+                                    provide rapid responses and immediate solutions to our clients' needs.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Quick Responsiveness and Flexibility</h3>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    We support the growth and learning of our team members through providing training
+                                    opportunities and ongoing workshops, helping them stay updated with the latest
+                                    technologies and trends in our field
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Continuous Development and Learning</h3>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Thanks to the skills and capabilities of our team members, we consistently stand out
+                                    in delivering unique solutions and providing exceptional customer experiences that
+                                    position us as leaders in the market.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="{{asset('assets/img/Team page-amico.png') }}" class="testimonial-img"
+                                        alt="">
+                                    <h3>Uniqueness and Excellence</h3>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+            </div>
 
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        </section> --}}
 
-      </div>
 
-    </section><!-- /Testimonials Section --> --}}
 
-    {{-- <!-- Team Section -->
+        {{-- <!-- Team Section -->
     <section id="team" class="team section">
 
       <!-- Section Title -->
@@ -1039,7 +938,7 @@
 
     </section><!-- /Team Section --> --}}
 
-    {{-- <!-- Clients Section -->
+        {{-- <!-- Clients Section -->
     <section id="clients" class="clients section">
 
       <!-- Section Title -->
@@ -1101,7 +1000,7 @@
 
     </section><!-- /Clients Section --> --}}
 
-    {{-- <!-- Recent Posts Section -->
+        {{-- <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
 
       <!-- Section Title -->
@@ -1213,7 +1112,7 @@
 
     </section><!-- /Recent Posts Section --> --}}
 
-    {{-- <!-- Contact Section -->
+        {{-- <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -1307,9 +1206,9 @@
 
     </section><!-- /Contact Section --> --}}
 
-  </main>
+    </main>
 
-  {{-- <footer id="footer" class="footer">
+    {{-- <footer id="footer" class="footer">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -1389,21 +1288,22 @@
 
   </footer> --}}
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-  <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-  <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-  <script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-  <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
-  <!-- Main JS File -->
-  <script src="{{ asset('assets/js/main.js') }}"></script>
+    <!-- Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
 </body>
