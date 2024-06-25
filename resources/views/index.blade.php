@@ -691,155 +691,131 @@
 
 
         <!-- Testimonials Section -->
-        {{-- <section id="testimonials" class="testimonials section">
+        <section id="testimonials" class="testimonials section">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Our Outstanding Team</h2>
-                <p>Why Our Team is Exceptional?<br></p>
-            </div><!-- End Section Title -->
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Our Outstanding Team</h2>
+            <p>Why Our Team is Exceptional?<br></p>
+          </div><!-- End Section Title -->
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <div class="swiper init-swiper">
-                    <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 1
+                    }
+                  }
                 }
-              }
-            }
-          </script>
-                    <div class="swiper-wrapper">
+              </script>
+              <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    Our team at our company consists of distinguished professionals who possess
-                                    extensive expertise in their fields, ensuring the delivery of the best solutions and
-                                    services to our clients
-                                </p>
-                                <div class="profile mt-auto">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Proficiency and Deep Expertise</h3>
-
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    We take pride in a team dedicated to innovation, continuously striving to develop
-                                    new and creative solutions that meet our clients' challenges and exceed their
-                                    expectations
-                                </p>
-                                <div class="profile mt-auto">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Innovation and Creativity</h3>
-
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    Our team excels in adapting swiftly to challenges and changes, enabling us to
-                                    provide rapid responses and immediate solutions to our clients' needs.
-                                </p>
-                                <div class="profile mt-auto">
-                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Quick Responsiveness and Flexibility</h3>
-
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    We support the growth and learning of our team members through providing training
-                                    opportunities and ongoing workshops, helping them stay updated with the latest
-                                    technologies and trends in our field
-                                </p>
-                                <div class="profile mt-auto">
-                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Continuous Development and Learning</h3>
-
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    Thanks to the skills and capabilities of our team members, we consistently stand out
-                                    in delivering unique solutions and providing exceptional customer experiences that
-                                    position us as leaders in the market.
-                                </p>
-                                <div class="profile mt-auto">
-                                    <img src="{{asset('assets/img/Team page-amico.png') }}" class="testimonial-img"
-                                        alt="">
-                                    <h3>Uniqueness and Excellence</h3>
-
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      Our team at our company consists of distinguished professionals who possess extensive expertise in their fields, ensuring the delivery of the best solutions and services to our clients
+                    </p>
+                    <div class="profile mt-auto">
+                      <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
+                      <h3>Proficiency and Deep Expertise</h3>
 
                     </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+                  </div>
+                </div><!-- End testimonial item -->
 
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      We take pride in a team dedicated to innovation, continuously striving to develop new and creative solutions that meet our clients' challenges and exceed their expectations
+                    </p>
+                    <div class="profile mt-auto">
+                      <img src="{{asset('assets/img/Team work-amico.png')}}" class="testimonial-img" alt="">
+                      <h3>Innovation and Creativity</h3>
+
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      Our team excels in adapting swiftly to challenges and changes, enabling us to provide rapid responses and immediate solutions to our clients' needs.
+                    </p>
+                    <div class="profile mt-auto">
+                      <img src="{{asset('assets/img/Team goals-amico.png')}}" class="testimonial-img" alt="">
+                      <h3>Quick Responsiveness and Flexibility</h3>
+
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      We support the growth and learning of our team members through providing training opportunities and ongoing workshops, helping them stay updated with the latest technologies and trends in our field
+                    </p>
+                    <div class="profile mt-auto">
+                      <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
+                      <h3>Continuous Development and Learning</h3>
+
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      Thanks to the skills and capabilities of our team members, we consistently stand out in delivering unique solutions and providing exceptional customer experiences that position us as leaders in the market.
+                    </p>
+                    <div class="profile mt-auto">
+                      <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
+                      <h3>Uniqueness and Excellence</h3>
+
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
 
-        </section> --}}
+          </div>
+
+        </section>
 
 
 
@@ -1112,7 +1088,7 @@
 
     </section><!-- /Recent Posts Section --> --}}
 
-        {{-- <!-- Contact Section -->
+        <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -1169,7 +1145,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="{{ route('contact.send') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                @csrf
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1204,7 +1181,7 @@
 
       </div>
 
-    </section><!-- /Contact Section --> --}}
+    </section><!-- /Contact Section -->
 
     </main>
 

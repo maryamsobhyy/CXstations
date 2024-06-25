@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Contacts\ContactController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -21,5 +22,6 @@ Route::group(
         Route::get('/', function () {
             return view('index');
         });
+        Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
     });
