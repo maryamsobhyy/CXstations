@@ -104,11 +104,11 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h1 data-aos="fade-up">Building Your Brand Strength</h1>
-                        <p data-aos="fade-up" data-aos-delay="100">Leverage customer experience stations to enhance
-                            their support
-                            Turn your customers into loyal brand advocates through interactive marketing and community
-                            strategies </p>
+                        <h3 data-aos="fade-up">Earn your customers' loyalty and enhance your brand experience with Cx Stations</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">Discover how to improve your customers'
+                             experience and achieve greater success without spending huge amounts of money on advertising. With Cx Stations,
+                             we give you tools and features that ensure increased customer satisfaction and loyalty to your brand. Join us today to start your journey of success
+                            </p>
                         <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
                             <!-- <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a> -->
                             <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
@@ -424,8 +424,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Check Our Services<br></p>
+                <h2>Advantages</h2>
+                <p>Check Our advantages<br></p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -435,10 +435,10 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item item-cyan position-relative">
                             <i class="bi bi-chat-left-dots icon"></i>
-                            <h3>CX stations</h3>
+                            <h3>Points and rewards system</h3>
                             <p>
-                                A company offering interactive marketing solutions, helping businesses communicate with
-                                their customers and build brand loyalty.
+                                Attract your existing and new customers with an innovative points earning system. Every like, comment, and share brings them points that they can redeem for attractive rewards.
+                                Boost engagement with your brand and encourage your customers to actively participate to enhance loyalty.
                             </p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
@@ -447,9 +447,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item item-orange position-relative">
                             <i class="bi bi-broadcast icon"></i>
-                            <h3>Interactive questions</h3>
-                            <p>We use interactive questions to better understand your customers' needs and build strong
-                                relationships with them.</p>
+                            <h3>Enhancing spread through social networks</h3>
+                            <p>Leverage the power of social networks to increase exposure and engagement with your brand. The more your customers share your content, the more likely you are to reach a wider audience.
+                                Save money and effort on traditional advertising by using a mechanism based on organic engagement and virality.</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -457,9 +457,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item item-teal position-relative">
                             <i class="bi bi-people icon"></i>
-                            <h3>Community-based marketing</h3>
-                            <p>We help you build a community around your brand and create brand advocates who are loyal
-                                to your brand</p>
+                            <h3>Improve customer experience</h3>
+                            <p>Give your customers a smooth and enjoyable experience that will keep them coming back. With Cx Stations, we help you understand your customers' needs and improve your services based on their feedback and interaction.
+                                Get accurate and detailed reports on customer interaction, enabling you to make informed decisions to improve your services and products.</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div>
@@ -468,9 +468,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item item-red position-relative">
                             <i class="bi bi-emoji-laughing icon"></i>
-                            <h3>Understanding customer emotions</h3>
-                            <p>We use data analytics to understand your customers' thoughts and feelings so that we can
-                                provide better experiences.</p>
+                            <h3>Personalized ads</h3>
+                            <p>Post your brand ads on our app pages or on our homepage. Take advantage of our broad user base to increase awareness of your brand and improve engagement with it.
+                                Target customers based on their preferences and behavior to ensure your messages reach the right audience.</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -478,8 +478,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-item item-indigo position-relative">
                             <i class="bi bi-chat-left-text icon"></i>
-                            <h3>With CX Stations, you can</h3>
-                            <p>You can increase customer engagement and improve customer loyalty with CX Stations.</p>
+                            <h3>Comprehensive support for all types of businesses</h3>
+                            <p>Whether you run an online store, restaurant, or any other type of business, Cx Stations provides the right solutions for your needs. We are here to support your growth and success.
+                                Customize services and features to suit your business type and target audience, ensuring the best results</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div>
@@ -786,7 +787,7 @@
                       We support the growth and learning of our team members through providing training opportunities and ongoing workshops, helping them stay updated with the latest technologies and trends in our field
                     </p>
                     <div class="profile mt-auto">
-                      <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
+                      <img src="{{asset('assets/img/1.jfif')}}" class="testimonial-img" alt="">
                       <h3>Continuous Development and Learning</h3>
 
                     </div>
@@ -802,7 +803,7 @@
                       Thanks to the skills and capabilities of our team members, we consistently stand out in delivering unique solutions and providing exceptional customer experiences that position us as leaders in the market.
                     </p>
                     <div class="profile mt-auto">
-                      <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
+                      <img src="{{asset('assets/img/2.jfif')}}" class="testimonial-img" alt="">
                       <h3>Uniqueness and Excellence</h3>
 
                     </div>
