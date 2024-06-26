@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Contacts\ContactController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -23,5 +24,21 @@ Route::group(
             return view('index');
         });
         Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+        Route::get('/test-email', function () {
+            $data = [
+                'name' => 'Test Name',
+                'email' => 'test@example.com',
+                'subject' => 'Test Subject',
+                'userMessage' =>'message',
+            ];
+
+            Mail::send('emails.contact', $data, function ($message) use ($data) {
+                $message->to('info@cxstations.com')
+                        ->subject('Test Email from Laravel')
+                        ->from($data['email'], $data['name']);
+            });
+
+            return 'Test email sent!';
+        });
 
     });

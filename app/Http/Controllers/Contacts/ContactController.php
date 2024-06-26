@@ -21,7 +21,7 @@ class ContactController extends Controller
         $data = [
             'name' => $request->input('name'),
             'email' => $request->input('email'),
-            'message' => $request->input('message'),
+            'userMessage' => $request->input('message'),
             'subject' =>$request->input('subject') ,
         ];
 
