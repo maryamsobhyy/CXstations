@@ -18,7 +18,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::get('/test', function () {
     $data = [
         'name' =>'Test Name',
-        'email' => 'test@example.com',
+        'email' => 'info@cxstations.com',
         'subject' => 'Test Subject',
         'userMessage' =>'message',
     ];
