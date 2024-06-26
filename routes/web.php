@@ -25,8 +25,8 @@ Route::get('/test', function () {
 
     Mail::send('emails.contact', $data, function ($message) use ($data) {
         $message->to('info@cxstations.com')
-            ->subject('New Contact Form Submission')
-            ->from($data['email'], $data['name']);
+            ->subject('New Contact Form Submission');
+//            ->from($data['email'], $data['name']);
     });
     return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);
 });
