@@ -30,7 +30,7 @@ class ContactController extends Controller
                     ->subject('New Contact Form Submission')
                     ->from($data['email'], $data['name']);
         });
-
-        return back()->with('success', 'Message sent successfully!');
+        return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);
+//        return back()->with('success', 'Message sent successfully!');
     }
 }

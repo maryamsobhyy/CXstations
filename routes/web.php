@@ -15,6 +15,21 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/test', function () {
+    $data = [
+        'name' =>'Test Name',
+        'email' => 'test@example.com',
+        'subject' => 'Test Subject',
+        'userMessage' =>'message',
+    ];
+
+    Mail::send('emails.contact', $data, function ($message) use ($data) {
+        $message->to('info@cxstations.com')
+            ->subject('New Contact Form Submission')
+            ->from($data['email'], $data['name']);
+    });
+    return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);
+});
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -24,21 +39,6 @@ Route::group(
             return view('index');
         });
         Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
-        Route::get('/test-email', function () {
-            $data = [
-                'name' => 'Test Name',
-                'email' => 'test@example.com',
-                'subject' => 'Test Subject',
-                'userMessage' =>'message',
-            ];
 
-            Mail::send('emails.contact', $data, function ($message) use ($data) {
-                $message->to('info@cxstations.com')
-                        ->subject('Test Email from Laravel')
-                        ->from($data['email'], $data['name']);
-            });
-
-            return 'Test email sent!';
-        });
 
     });
