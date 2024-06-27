@@ -1165,14 +1165,21 @@
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
+                <div class="col-md-12 text-center">
+                    <div id="loadingMessage" class="loading" style="display: none;">Loading...</div>
+                    <div id="errorMessage" class="error-message" style="display: none;"></div>
+                    <div id="sentMessage" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
 
+                    <button type="submit">Send Message</button>
+                </div>
+{{--
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
                   <button type="submit">Send Message</button>
-                </div>
+                </div> --}}
 
               </div>
             </form>
@@ -1282,6 +1289,50 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script>document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this);
+
+        // Show the loading message
+        document.getElementById('loadingMessage').style.display = 'block';
+        document.getElementById('errorMessage').style.display = 'none';
+        document.getElementById('sentMessage').style.display = 'none';
+
+        fetch('{{ route("contact.send") }}', {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Hide the loading message
+            document.getElementById('loadingMessage').style.display = 'none';
+
+            if (data.status) {
+                // Show the success message
+                document.getElementById('sentMessage').style.display = 'block';
+                document.getElementById('errorMessage').style.display = 'none';
+            } else {
+                // Show the error message
+                document.getElementById('errorMessage').innerText = 'Failed to send email.';
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('sentMessage').style.display = 'none';
+            }
+        })
+        .catch(error => {
+            // Hide the loading message
+            document.getElementById('loadingMessage').style.display = 'none';
+
+            // Show the error message
+            document.getElementById('errorMessage').innerText = 'An error occurred.';
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('sentMessage').style.display = 'none';
+        });
+    });
+    </script>
 
 
 </body>
