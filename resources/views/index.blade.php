@@ -1173,6 +1173,7 @@
                 </div> --}}
                 <div class="col-md-12 text-center">
                     <button type="submit">Send Message</button>
+                    <div id="loadingMessage" class="loading" style="display: none;">Loading...</div>
                     {{-- <div id="errorMessage" class="error-message" style="display: none;"></div> --}}
                     <div id="sentMessage" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
                     {{-- <button type="submit" style="background-image: linear-gradient(to right, #F0A500, orange);">تم ارسال الايميل بنجاح</button> --}}
