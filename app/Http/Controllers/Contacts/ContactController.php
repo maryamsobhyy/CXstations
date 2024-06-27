@@ -30,7 +30,7 @@ class ContactController extends Controller
                     ->subject('استفسار مرسل للموقع');
 
         });
-        return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);
-//        return back()->with('success', 'Message sent successfully!');
+        // return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);
+       return back()->with('success', 'Message sent successfully!');
     }
 }
