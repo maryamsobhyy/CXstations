@@ -27,7 +27,7 @@ class ContactController extends Controller
 
         Mail::send('emails.contact', $data, function ($message) use ($data) {
             $message->to('info@cxstations.com')
-                    ->subject('New Contact Form Submission');
+                    ->subject('استفسار مرسل للموقع');
 
         });
         return response()->json(['message' => 'Email sent successfully', 'status' =>true], 200);

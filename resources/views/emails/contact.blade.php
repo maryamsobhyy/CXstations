@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Contact Form Submission</title>
+    <title>استفسار مرسل للموقع</title>
 </head>
 <body>
     <p><strong>Name:</strong> {{ $name }}</p>
