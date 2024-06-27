@@ -1109,17 +1109,17 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>Egypt</p>
+                  <p>Saudi Arabia</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <h3>Call Us on mobile</h3>
+                  <p>+966 560 509 388</p>
+
                 </div>
               </div><!-- End Info Item -->
 
@@ -1127,17 +1127,16 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p>info@cxstations.com</p>
+
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                   <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
+                  <h3>Call Us on whatsapp</h3>
+                  <p>+966 560 509 388</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1282,50 +1281,7 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-    <script>document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
 
-        var formData = new FormData(this);
-
-        // Show the loading message
-        document.getElementById('loadingMessage').style.display = 'block';
-        document.getElementById('errorMessage').style.display = 'none';
-        document.getElementById('sentMessage').style.display = 'none';
-
-        fetch('{{ route("contact.send") }}', {
-            method: 'POST',
-            headers: {
-                'X-CSRF-TOKEN': '{{ csrf_token() }}'
-            },
-            body: formData,
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Hide the loading message
-            document.getElementById('loadingMessage').style.display = 'none';
-
-            if (data.status) {
-                // Show the success message
-                document.getElementById('sentMessage').style.display = 'block';
-                document.getElementById('errorMessage').style.display = 'none';
-            } else {
-                // Show the error message
-                document.getElementById('errorMessage').innerText = 'Failed to send email.';
-                document.getElementById('errorMessage').style.display = 'block';
-                document.getElementById('sentMessage').style.display = 'none';
-            }
-        })
-        .catch(error => {
-            // Hide the loading message
-            document.getElementById('loadingMessage').style.display = 'none';
-
-            // Show the error message
-            document.getElementById('errorMessage').innerText = 'An error occurred.';
-            document.getElementById('errorMessage').style.display = 'block';
-            document.getElementById('sentMessage').style.display = 'none';
-        });
-    });
-    </script>
 
 
 </body>
