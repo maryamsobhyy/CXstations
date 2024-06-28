@@ -91,5 +91,71 @@ return [
 'Alt Features13'=>'We assist travel agencies and airlines in delivering unforgettable travel experiences by analyzing customer interactions and enhancing the service provided.',
 'Alt Features14'=>'Media and Entertainment',
 'Alt Features15'=>'We help media and entertainment companies understand audience preferences and deliver content that aligns with their interests, thereby increasing engagement and following.',
+'contact1'=>'Contact',
+'contact2'=>'Contact Us',
+'contact3'=>'Address',
+'contact4'=>'Egypt',
+'contact5'=>'Saudi Arabia',
+'contact6'=>'Call Us on mobile',
+'contact7'=>'+966 560 509 388',
+'contact8'=>'Email Us',
+'contact9'=>'info@cxstations.com',
+'contact10'=>'Call Us on whatsapp',
+'contact11'=>'+966 560 509 388',
+'contact12'=>'Send message',
+'footer1'=>'CxStations',
+'Useful Links'=>'Useful Links',
+'FollowUs'=>'FollowUs',
+'Copyright'=>'Copyright',
+'All Rights Reserved'=>'All Rights Reserved',
+'mobile1'=>'Social Interaction and Engagement',
+'mobile2'=>'The application can enhance social interaction through features such as content
+sharing, user comments, and interaction with other social networks, fostering a
+community around your brand.',
+'mobile3'=>'Security and Personal Data Protection',
+'mobile4'=>' The application provides advanced security measures to protect users personal
+data, such as strong encryption and strict privacy policies, building trust and
+ensuring data security during interaction with the app.',
+'mobile5'=>'Access to Customer Service and Technical Support',
+'mobile6'=>'Users can easily access customer service and technical support through the
+application, where they can ask questions, provide feedback, and get immediate
+assistance, enhancing overall customer satisfaction.',
+'mobile7'=>'Social Interaction and Engagement',
+'mobile8'=>'The application enhances social interaction through features such as content
+sharing, user comments, and integration with other social networks, fostering
+community building around your brand.',
+'mobile9'=>'Advanced Data Analytics and Statistics',
+'mobile10'=>'We use advanced analytics tools to accurately understand and interpret big data
+and statistics. This enables clients to make informed strategic decisions based
+on deep insights.
+',
+'mobile11'=>'Strategic Market Analysis and Trends',
+'mobile12'=>'Thanks to our tools, companies can analyze market trends and estimate emerging
+demands. We offer in-depth analytics that provide insights into opportunities
+and challenges, which can contribute to defining growth and expansion
+strategies.',
+'Testimonials1'=>'Our Outstanding Team',
+
+'Testimonials2'=>'Why Our Team is Exceptional?',
+
+'Testimonials3'=>'   Our team at our company consists of distinguished professionals who possess extensive expertise in their fields, ensuring the delivery of the best solutions and services to our clients',
+
+'Testimonials4'=>'Proficiency and Deep Expertise',
+
+'Testimonials5'=>' We take pride in a team dedicated to innovation, continuously striving to develop new and creative solutions that meet our clients challenges and exceed their expectations',
+
+'Testimonials6'=>'Innovation and Creativity',
+
+'Testimonials7'=>'  Our team excels in adapting swiftly to challenges and changes, enabling us to provide rapid responses and immediate solutions to our clients needs.',
+
+'Testimonials8'=>'Quick Responsiveness and Flexibility',
+
+'Testimonials9'=>'We support the growth and learning of our team members through providing training opportunities and ongoing workshops, helping them stay updated with the latest technologies and trends in our field',
+
+'Testimonials10'=>'Continuous Development and Learning',
+
+'Testimonials11'=>'  Thanks to the skills and capabilities of our team members, we consistently stand out in delivering unique solutions and providing exceptional customer experiences that position us as leaders in the market.',
+
+'Testimonials12'=>'Uniqueness and Excellence',
 
 ];

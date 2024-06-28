@@ -362,51 +362,46 @@
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-award"></i>
                                 <div>
-                                    <h4> Social Interaction and Engagement</h4>
-                                    <p>The application can enhance social interaction through features such as content
-                                        sharing, user comments, and interaction with other social networks, fostering a
-                                        community around your brand.</p>
+                                    <h4>{{ trans('mycustom.mobile1') }}</h4>
+                                    <p>{{ trans('mycustom.mobile2') }}
+                                        </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-card-checklist"></i>
                                 <div>
-                                    <h4>Security and Personal Data Protection</h4>
-                                    <p>
-                                        The application provides advanced security measures to protect users' personal
-                                        data, such as strong encryption and strict privacy policies, building trust and
-                                        ensuring data security during interaction with the app.</p>
+                                    <h4>{{ trans('mycustom.mobile3') }}</h4>
+                                    <p>{{ trans('mycustom.mobile4') }}
+                                        </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-dribbble"></i>
                                 <div>
-                                    <h4>Access to Customer Service and Technical Support</h4>
-                                    <p>Users can easily access customer service and technical support through the
-                                        application, where they can ask questions, provide feedback, and get immediate
-                                        assistance, enhancing overall customer satisfaction.</p>
+                                    <h4>{{ trans('mycustom.mobile5') }}</h4>
+                                    <p>{{ trans('mycustom.mobile6') }}
+                                       </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-filter-circle"></i>
                                 <div>
-                                    <h4>Social Interaction and Engagement</h4>
-                                    <p>The application enhances social interaction through features such as content
-                                        sharing, user comments, and integration with other social networks, fostering
-                                        community building around your brand.</p>
+                                    <h4>{{ trans('mycustom.mobile7') }}</h4>
+                                    <p>{{ trans('mycustom.mobile8') }}
+                                       </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-lightning-charge"></i>
                                 <div>
-                                    <h4>Advanced Data Analytics and Statistics</h4>
-                                    <p>We use advanced analytics tools to accurately understand and interpret big data
-                                        and statistics. This enables clients to make informed strategic decisions based
-                                        on deep insights.
+                                    <h4>{{ trans('mycustom.mobile9') }}</h4>
+                                    <p>{{ trans('mycustom.mobile10') }}
+
+
 
                                     </p>
                                 </div>
@@ -415,11 +410,9 @@
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-patch-check"></i>
                                 <div>
-                                    <h4>Strategic Market Analysis and Trends</h4>
-                                    <p>Thanks to our tools, companies can analyze market trends and estimate emerging
-                                        demands. We offer in-depth analytics that provide insights into opportunities
-                                        and challenges, which can contribute to defining growth and expansion
-                                        strategies.</p>
+                                    <h4>{{ trans('mycustom.mobile11') }}</h4>
+                                    <p>{{ trans('mycustom.mobile12') }}
+                                      </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
@@ -780,8 +773,8 @@
 
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-            <h2>Our Outstanding Team</h2>
-            <p>Why Our Team is Exceptional?<br></p>
+            <h2>{{ trans('mycustom.Testimonials1') }}</h2>
+            <p>{{ trans('mycustom.Testimonials2') }}<br></p>
           </div><!-- End Section Title -->
 
           <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -819,12 +812,12 @@
                     <div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    <p>
-                      Our team at our company consists of distinguished professionals who possess extensive expertise in their fields, ensuring the delivery of the best solutions and services to our clients
+                    <p>{{ trans('mycustom.Testimonials3') }}
+
                     </p>
                     <div class="profile mt-auto">
                       <img src="{{asset('assets/img/Team page-amico.png')}}" class="testimonial-img" alt="">
-                      <h3>Proficiency and Deep Expertise</h3>
+                      <h3>{{ trans('mycustom.Testimonials4') }}</h3>
 
                     </div>
                   </div>
@@ -835,12 +828,12 @@
                     <div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    <p>
-                      We take pride in a team dedicated to innovation, continuously striving to develop new and creative solutions that meet our clients' challenges and exceed their expectations
+                    <p>{{ trans('mycustom.Testimonials5') }}
+
                     </p>
                     <div class="profile mt-auto">
                       <img src="{{asset('assets/img/Team work-amico.png')}}" class="testimonial-img" alt="">
-                      <h3>Innovation and Creativity</h3>
+                      <h3>{{ trans('mycustom.Testimonials6') }}</h3>
 
                     </div>
                   </div>
@@ -851,12 +844,12 @@
                     <div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    <p>
-                      Our team excels in adapting swiftly to challenges and changes, enabling us to provide rapid responses and immediate solutions to our clients' needs.
+                    <p>{{ trans('mycustom.Testimonials7') }}
+
                     </p>
                     <div class="profile mt-auto">
                       <img src="{{asset('assets/img/Team goals-amico.png')}}" class="testimonial-img" alt="">
-                      <h3>Quick Responsiveness and Flexibility</h3>
+                      <h3>{{ trans('mycustom.Testimonials8') }}</h3>
 
                     </div>
                   </div>
@@ -867,12 +860,12 @@
                     <div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    <p>
-                      We support the growth and learning of our team members through providing training opportunities and ongoing workshops, helping them stay updated with the latest technologies and trends in our field
+                    <p>{{ trans('mycustom.Testimonials9') }}
+
                     </p>
                     <div class="profile mt-auto">
                       <img src="{{asset('assets/img/1.jfif')}}" class="testimonial-img" alt="">
-                      <h3>Continuous Development and Learning</h3>
+                      <h3>{{ trans('mycustom.Testimonials10') }}</h3>
 
                     </div>
                   </div>
@@ -883,12 +876,12 @@
                     <div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    <p>
-                      Thanks to the skills and capabilities of our team members, we consistently stand out in delivering unique solutions and providing exceptional customer experiences that position us as leaders in the market.
+                    <p>{{ trans('mycustom.Testimonials11') }}
+
                     </p>
                     <div class="profile mt-auto">
                       <img src="{{asset('assets/img/2.jfif')}}" class="testimonial-img" alt="">
-                      <h3>Uniqueness and Excellence</h3>
+                      <h3>{{ trans('mycustom.Testimonials12') }}</h3>
 
                     </div>
                   </div>
@@ -1178,8 +1171,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
+        <h2>{{ trans('mycustom.contact1') }}</h2>
+        <p>{{ trans('mycustom.contact2') }}</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1192,17 +1185,17 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>Egypt</p>
-                  <p>Saudi Arabia</p>
+                  <h3>{{ trans('mycustom.contact3') }}</h3>
+                  <p>{{ trans('mycustom.contact4') }}</p>
+                  <p>{{ trans('mycustom.contact5') }}</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us on mobile</h3>
-                  <p>+966 560 509 388</p>
+                  <h3>{{ trans('mycustom.contact6') }}</h3>
+                  <p>{{ trans('mycustom.contact7') }}</p>
 
                 </div>
               </div><!-- End Info Item -->
@@ -1210,8 +1203,8 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@cxstations.com</p>
+                  <h3>{{ trans('mycustom.contact8') }}</h3>
+                  <p>{{ trans('mycustom.contact9') }}</p>
 
                 </div>
               </div><!-- End Info Item -->
@@ -1219,8 +1212,8 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                     <i class="bi bi-telephone"></i>
-                  <h3>Call Us on whatsapp</h3>
-                  <p>+966 560 509 388</p>
+                  <h3>{{ trans('mycustom.contact10') }}</h3>
+                  <p>{{ trans('mycustom.contact11') }}</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1250,7 +1243,7 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                    <button type="submit">Send Message</button>
+                    <button type="submit">{{ trans('mycustom.contact12') }}</button>
                     <div id="loadingMessage" class="loading" style="display: none;">Loading...</div>
                     <div id="errorMessage" class="error-message" style="background-image: linear-gradient(to right, green, green);"></div>
                     <div id="sentMessage" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
@@ -1277,39 +1270,39 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">CxStations</span>
+            <span class="sitename">{{ trans('mycustom.footer1') }}</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Egypt</p>
-            <p>Saudi Arabia</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+966 560 509 388</span></p>
-            <p><strong>Email:</strong> <span>info@cxstations.com</span></p>
+            <p>{{ trans('mycustom.contact4') }}</p>
+            <p>{{ trans('mycustom.contact5') }}</p>
+            <p class="mt-3"><strong>{{ trans('mycustom.contact2') }}</strong> <span>+966 560 509 388</span></p>
+            <p><strong>{{ trans('mycustom.contact8') }}</strong> <span>info@cxstations.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>{{ trans('mycustom.Useful Links') }}</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.home') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.About') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.Services') }}</a></li>
             {{-- <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li> --}}
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>{{ trans('mycustom.Services') }}</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Enhancing spread through social networks</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Improve customer experience</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Comprehensive support for all types of businesses</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Personalized ads</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services3') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services7') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services5') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services9') }}</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <h4>{{ trans('mycustom.FollowUs') }}</h4>
+          {{-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> --}}
           <div class="social-links d-flex">
             <a href="https://x.com/cxstations"><i class="bi bi-twitter-x"></i></a>
             {{-- <a href=""><i class="bi bi-facebook"></i></a>
@@ -1322,7 +1315,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cxstations</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>{{ trans('mycustom.Copyright') }}</span> <strong class="px-1 sitename">{{ trans('mycustom.footer1') }}</strong> <span>{{ trans('mycustom.All Rights Reserved') }}</span></p>
       <div class="credits">
 
       </div>
