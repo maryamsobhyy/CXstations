@@ -278,73 +278,75 @@
 
         <!-- Features Section -->
         <section id="features" class="features section">
+
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Analytical tools</h2>
-                <p> Check Our Analytical tools<br></p>
+              <h2>{{ trans('mycustom.features1') }} </h2>
+              <p>{{ trans('mycustom.features2') }}<br></p>
             </div><!-- End Section Title -->
 
             <div class="container">
 
-                <div class="row gy-5">
+              <div class="row gy-5">
 
-                    <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-                        <img src="assets/img/features.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-xl-6 d-flex">
-                        <div class="row align-self-center gy-4">
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Deep and Detailed Analysis</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Comprehensive and Accurate Reports</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Strategic Market Analysis and Trends</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Continuous Monitoring and Evaluation</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Advanced Data Analytics and Statistics</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                                <div class="feature-box d-flex align-items-center">
-                                    <i class="bi bi-check"></i>
-                                    <h3>Artificial Intelligence and Machine Learning Techniques</h3>
-                                </div>
-                            </div><!-- End Feature Item -->
-
-                        </div>
-                    </div>
-
+                <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+                  <img src="{{ asset('assets/img/features (2).png') }}" class="img-fluid" alt="">
                 </div>
+
+                <div class="col-xl-6 d-flex">
+                  <div class="row align-self-center gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features3') }}</h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features4') }}</h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features5') }}</h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features6') }}</h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features7') }}
+                          </h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+                      <div class="feature-box d-flex align-items-center">
+                        <i class="bi bi-check"></i>
+                        <h3>{{ trans('mycustom.features8') }}</h3>
+                      </div>
+                    </div><!-- End Feature Item -->
+
+                  </div>
+                </div>
+
+              </div>
 
             </div>
 
-        </section>
+          </section>
         <!-- /Features Section -->
 
         <section id="alt-features" class="alt-features section">
@@ -512,6 +514,88 @@
             </div>
 
         </section>
+        <section id="alt-features" class="alt-features section">
+            <div class="container section-title" data-aos="fade-up">
+                   <h2>{{ trans('mycustom.Alt Features1') }}</h2>
+                   <p>{{ trans('mycustom.Alt Features2') }}  <br></p>
+                   <h4>{{ trans('mycustom.Alt Features3') }}
+                     </h4>
+                 </div>
+                 <div class="container">
+
+                   <div class="row gy-5">
+
+                     <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+
+                       <div class="row align-self-center gy-5">
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-award"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features4') }}
+                               </h4>
+                             <p>{{ trans('mycustom.Alt Features5') }}</p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-card-checklist"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features6') }}</h4>
+                             <p>{{ trans('mycustom.Alt Features7') }}
+                               </p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-dribbble"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features8') }}
+                               </h4>
+                             <p>{{ trans('mycustom.Alt Features9') }} </p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-filter-circle"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features10') }} </h4>
+                             <p>{{ trans('mycustom.Alt Features11') }}
+                              </p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-lightning-charge"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features12') }} </h4>
+                             <p>{{ trans('mycustom.Alt Features13') }}
+
+                             </p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                         <div class="col-md-6 icon-box">
+                           <i class="bi bi-patch-check"></i>
+                           <div>
+                             <h4>{{ trans('mycustom.Alt Features14') }}</h4>
+                             <p>{{ trans('mycustom.Alt Features15') }}</p>
+                           </div>
+                         </div><!-- End Feature Item -->
+
+                       </div>
+
+                     </div>
+
+                     <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+                       <img src="{{ asset('assets/img/sections.png') }}" class="img-fluid" alt="">
+                     </div>
+
+                   </div>
+
+                 </div>
+
+               </section>
         <!-- /Services Section -->
 
         {{-- <!-- Pricing Section -->
@@ -664,19 +748,17 @@
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Does CX Station provide specialized technical support?</h3>
+                                <h3>{{ trans('mycustom.faq10') }}</h3>
                                 <div class="faq-content">
-                                    <p>Yes, we at CX Station provide specialized technical support to companies wishing to use our platform,
-                                        through a specialized team that ensures that all their technical and technical needs are met..</p>
+                                    <p>{{ trans('mycustom.faq11') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Can CX Station solutions be adapted to specific sectors?</h3>
+                                <h3>{{ trans('mycustom.faq12') }}</h3>
                                 <div class="faq-content">
-                                    <p>Yes, CX Station offers specialized solutions that suit the needs of various sectors,
-                                        making it easier for companies to successfully and effectively implement customer experience strategies..</p>
+                                    <p>{{ trans('mycustom.faq13') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
