@@ -22,6 +22,28 @@
     <title>CXstations</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <!--  Seo -->
+    @if (app()->getlocale() == "ar")
+                <meta http-equiv="Content-Language" content="ar">
+                <title>سي إكس إستيشن</title>
+                <meta name="description" content="سي إكس إستيشن هو موقع يقدم خدمات متميزة لأصحاب العلامات التجارية لتحسين تجربة العملاء وضمان رضاهم. من خلال مجموعة متكاملة من الأدوات والخدمات المتطورة، يساعد الموقع العلامات التجارية في تحليل وفهم تفاعلات العملاء، مما يتيح لهم تقديم تجارب استثنائية وتعزيز الولاء للعلامة التجارية.">
+                <meta name="keywords" content="سي إكس إستيشن هو موقع يقدم خدمات متميزة لأصحاب العلامات التجارية لتحسين تجربة العملاء وضمان رضاهم. من خلال مجموعة متكاملة من الأدوات والخدمات المتطورة، يساعد الموقع العلامات التجارية في تحليل وفهم تفاعلات العملاء، مما يتيح لهم تقديم تجارب استثنائية وتعزيز الولاء للعلامة التجارية.">
+
+                @elseif (app()->getlocale() == "en")
+                <meta http-equiv="Content-Language" content="en">
+                <title>CXstations</title>
+                <meta name="description" content="سي إكس إستيشن هو موقع يقدم خدمات متميزة لأصحاب العلامات التجارية لتحسين تجربة العملاء وضمان رضاهم. من خلال مجموعة متكاملة من الأدوات والخدمات المتطورة، يساعد الموقع العلامات التجارية في تحليل وفهم تفاعلات العملاء، مما يتيح لهم تقديم تجارب استثنائية وتعزيز الولاء للعلامة التجارية.">
+                <meta name="keywords" content="Cx Stations provides exceptional services for brand owners, restaurants, and more to enhance customer experience and satisfaction. With a comprehensive suite of advanced tools and services, the platform helps businesses analyze and understand customer interactions, enabling them to deliver outstanding experiences and foster brand loyalty">
+                @else
+                <meta http-equiv="Content-Language" content="{{app()->getlocale() }}">
+                <title>CXstations</title>
+                <meta name="description" content="سي إكس إستيشن هو موقع يقدم خدمات متميزة لأصحاب العلامات التجارية لتحسين تجربة العملاء وضمان رضاهم. من خلال مجموعة متكاملة من الأدوات والخدمات المتطورة، يساعد الموقع العلامات التجارية في تحليل وفهم تفاعلات العملاء، مما يتيح لهم تقديم تجارب استثنائية وتعزيز الولاء للعلامة التجارية.">
+                <meta name="keywords" content="Cx Stations provides exceptional services for brand owners, restaurants, and more to enhance customer experience and satisfaction. With a comprehensive suite of advanced tools and services, the platform helps businesses analyze and understand customer interactions, enabling them to deliver outstanding experiences and foster brand loyalty">
+            @endif
+
+                <link rel="alternate" hreflang="ar" href="https://cxstations.com/ar"  />
+                <link rel="canonical" href="https://cxstations.com/en" />
+
 
     <!-- Favicons -->
     <link href="{{ asset('assets/img/img.png') }}" rel="icon">
@@ -74,10 +96,10 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">{{ trans('mycustom.home') }}</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">{{ trans('mycustom.About') }}</a></li>
+                    <li><a href="#services">{{ trans('mycustom.Services') }}</a></li>
                     <li class="dropdown">
-                        <a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <a href="#"><span>{{ trans('mycustom.Language') }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
                             @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <li>
@@ -92,7 +114,7 @@
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Started</a>
+            <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">{{ trans('mycustom.Started') }}</a>
         </div>
     </header>
 
@@ -104,10 +126,8 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h3 data-aos="fade-up">Earn your customers' loyalty and enhance your brand experience with Cx Stations</h3>
-                        <p data-aos="fade-up" data-aos-delay="100">Discover how to improve your customers'
-                             experience and achieve greater success without spending huge amounts of money on advertising. With Cx Stations,
-                             we give you tools and features that ensure increased customer satisfaction and loyalty to your brand. Join us today to start your journey of success
+                        <h3 data-aos="fade-up">{{ trans('mycustom.hero1') }}</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">{{ trans('mycustom.hero2') }}
                             </p>
                         <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
                             <!-- <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a> -->
@@ -131,18 +151,15 @@
                     <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="content">
-                            <h2>About Us</h2>
-                            <h3>cx stations is a dynamic marketing platform dedicated to harnessing community engagement
-                                and customer intelligence to elevate brand loyalty and advocacy.</h3>
-                            <p>
-                                Established with the aim of transforming marketing through authentic connections between
-                                enterprises and their clientele, our mission is to pioneer meaningful relationships that
-                                redefine industry standards.
+                            <h2>{{ trans('mycustom.About Us') }}</h2>
+                            <h3>{{ trans('mycustom.about1') }}</h3>
+                            <p>{{ trans('mycustom.about2') }}
+
                             </p>
                             <div class="text-center text-lg-start">
                                 <a href="#"
                                     class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                    <span>Read More</span>
+                                    <span>{{ trans('mycustom.about3') }}</span>
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -163,9 +180,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Join us</h2>
-                <p>Contribute your insightful reviews and feedback on previous shopping experiences to earn reward
-                    points<br></p>
+                <h2>{{ trans('mycustom.Join us') }}</h2>
+                <p> {{ trans('mycustom.Join us1') }}<br></p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -175,17 +191,16 @@
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <img src="{{ asset('assets/img/1.png') }}" class="img-fluid" alt="">
-                            <h3>A premium user experience</h3>
-                            <p>Ensuring a premium user experience through an easy-to-use interface and attractive design
-                                that facilitates the process of rating and interaction</p>
+                            <h3>{{ trans('mycustom.Join us2') }}</h3>
+                            <p>{{ trans('mycustom.Join us3') }}</p>
                         </div>
                     </div><!-- End Card Item -->
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <img src="{{ asset('assets/img/2.png') }}" class="img-fluid" alt="">
-                            <h3>Reward points upon rating</h3>
-                            <p>discover exclusive offers, earn points, and share past shopping experiences with friends
+                            <h3>{{ trans('mycustom.Join us4') }}</h3>
+                            <p>{{ trans('mycustom.Join us5') }}
                             </p>
                         </div>
                     </div><!-- End Card Item -->
@@ -193,9 +208,9 @@
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <img src="{{ asset('assets/img/3.png') }}" class="img-fluid" alt="">
-                            <h3>Redeem points</h3>
-                            <p>
-                                You can redeem points for prizes, discounts, gifts, and exclusive experiences</p>
+                            <h3>{{ trans('mycustom.Join us6') }}</h3>
+                            <p>{{ trans('mycustom.Join us7') }}
+                                </p>
                         </div>
                     </div><!-- End Card Item -->
 
@@ -217,8 +232,8 @@
                             <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
                             <div>
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>
-                                    The easiest ways to receive your payments.</p>
+                                <p>{{ trans('mycustom.stats1') }}
+                                    </p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -229,7 +244,7 @@
                                 style="color: #ee6c20;"></i>
                             <div>
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>Check your points balance</p>
+                                <p>{{ trans('mycustom.stats2') }}</p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -237,9 +252,10 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
+                            <br>
                             <div>
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>Adding comments to enhance the shopping experience</p>
+                                <p>{{ trans('mycustom.stats3') }}</p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -249,7 +265,7 @@
                             <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
                             <div>
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>Convert your points into a purchase voucher</p>
+                                <p>{{ trans('mycustom.stats4') }}</p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -424,8 +440,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Advantages</h2>
-                <p>Check Our advantages<br></p>
+                <h2>{{ trans('mycustom.Advantages') }}</h2>
+                <p>{{ trans('mycustom.Check Our advantages') }}<br></p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -435,10 +451,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item item-cyan position-relative">
                             <i class="bi bi-chat-left-dots icon"></i>
-                            <h3>Points and rewards system</h3>
-                            <p>
-                                Attract your existing and new customers with an innovative points earning system. Every like, comment, and share brings them points that they can redeem for attractive rewards.
-                                Boost engagement with your brand and encourage your customers to actively participate to enhance loyalty.
+                            <h3>{{ trans('mycustom.services1') }}</h3>
+                            <p>{{ trans('mycustom.services2') }}
+
                             </p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
@@ -447,9 +462,8 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item item-orange position-relative">
                             <i class="bi bi-broadcast icon"></i>
-                            <h3>Enhancing spread through social networks</h3>
-                            <p>Leverage the power of social networks to increase exposure and engagement with your brand. The more your customers share your content, the more likely you are to reach a wider audience.
-                                Save money and effort on traditional advertising by using a mechanism based on organic engagement and virality.</p>
+                            <h3>{{ trans('mycustom.services3') }}</h3>
+                            <p>{{ trans('mycustom.services4') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -457,9 +471,8 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item item-teal position-relative">
                             <i class="bi bi-people icon"></i>
-                            <h3>Improve customer experience</h3>
-                            <p>Give your customers a smooth and enjoyable experience that will keep them coming back. With Cx Stations, we help you understand your customers' needs and improve your services based on their feedback and interaction.
-                                Get accurate and detailed reports on customer interaction, enabling you to make informed decisions to improve your services and products.</p>
+                            <h3>{{ trans('mycustom.services5') }}</h3>
+                            <p>{{ trans('mycustom.services6') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div>
@@ -468,9 +481,8 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item item-red position-relative">
                             <i class="bi bi-emoji-laughing icon"></i>
-                            <h3>Personalized ads</h3>
-                            <p>Post your brand ads on our app pages or on our homepage. Take advantage of our broad user base to increase awareness of your brand and improve engagement with it.
-                                Target customers based on their preferences and behavior to ensure your messages reach the right audience.</p>
+                            <h3>{{ trans('mycustom.services7') }}</h3>
+                            <p>{{ trans('mycustom.services8') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -478,9 +490,8 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-item item-indigo position-relative">
                             <i class="bi bi-chat-left-text icon"></i>
-                            <h3>Comprehensive support for all types of businesses</h3>
-                            <p>Whether you run an online store, restaurant, or any other type of business, Cx Stations provides the right solutions for your needs. We are here to support your growth and success.
-                                Customize services and features to suit your business type and target audience, ensuring the best results</p>
+                            <h3>{{ trans('mycustom.services9') }}</h3>
+                            <p>{{ trans('mycustom.services10') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div>
@@ -489,9 +500,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-item item-pink position-relative">
                             <i class="bi bi-graph-up-arrow icon"></i>
-                            <h3> You can also through us</h3>
-                            <p>
-                                You can also increase your sales and build a stronger brand through us</p>
+                            <h3>{{ trans('mycustom.services11') }} </h3>
+                            <p>{{ trans('mycustom.services12') }}
+                                </p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -601,7 +612,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>F.A.Q</h2>
-                <p>Frequently Asked Questions</p>
+                <p>{{ trans('mycustom.faq1') }}</p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -613,32 +624,25 @@
                         <div class="faq-container">
 
                             <div class="faq-item faq-active">
-                                <h3>What are the services offered by CX STATIONS?</h3>
+                                <h3>{{ trans('mycustom.faq2') }}</h3>
                                 <div class="faq-content">
-                                    <p>CX STATIONS is a dynamic marketing platform dedicated to enhancing community
-                                        engagement and understanding customer insights through advanced analytics and
-                                        social interaction. We provide solutions to improve brand loyalty and enhance
-                                        customer interaction.</p>
+                                    <p> {{ trans('mycustom.faq3') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>How does CX STATIONS help companies achieve their marketing goals?</h3>
+                                <h3>{{ trans('mycustom.faq4') }}</h3>
                                 <div class="faq-content">
-                                    <p>We offer deep analytics into customer behaviors and campaign performance,
-                                        enabling companies to make informed strategic decisions and achieve effective
-                                        results.</p>
+                                    <p>{{ trans('mycustom.faq5') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>What is the competitive advantage of CX STATIONS?</h3>
+                                <h3>{{ trans('mycustom.faq6') }}</h3>
                                 <div class="faq-content">
-                                    <p>We excel in using the latest technologies in analytics and social interaction,
-                                        providing innovative solutions and exceptional customer experiences that
-                                        contribute to the success of our clients in the market.</p>
+                                    <p>{{ trans('mycustom.faq7') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -652,29 +656,27 @@
                         <div class="faq-container">
 
                             <div class="faq-item">
-                                <h3>Can my company integrate with CX STATIONS?</h3>
+                                <h3>{{ trans('mycustom.faq8') }}</h3>
                                 <div class="faq-content">
-                                    <p>Yes, we can integrate our services with your existing systems to ensure a
-                                        seamless and effective experience.</p>
+                                    <p>{{ trans('mycustom.faq9') }}</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Does CX STATIONS provide services tailored to different company sizes?</h3>
+                                <h3>Does CX Station provide specialized technical support?</h3>
                                 <div class="faq-content">
-                                    <p>Yes, we offer diverse solutions that cater to the needs of small, medium, and
-                                        large companies alike, focusing on achieving tangible results.</p>
+                                    <p>Yes, we at CX Station provide specialized technical support to companies wishing to use our platform,
+                                        through a specialized team that ensures that all their technical and technical needs are met..</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>What are the steps to start benefiting from CX STATIONS services?</h3>
+                                <h3>Can CX Station solutions be adapted to specific sectors?</h3>
                                 <div class="faq-content">
-                                    <p>You can start by contacting our team for a free consultation, where we will
-                                        assess your needs and provide suitable plans to achieve your marketing goals and
-                                        enhance customer loyalty.</p>
+                                    <p>Yes, CX Station offers specialized solutions that suit the needs of various sectors,
+                                        making it easier for companies to successfully and effectively implement customer experience strategies..</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -1134,7 +1136,7 @@
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
+                    <i class="bi bi-telephone"></i>
                   <h3>Call Us on whatsapp</h3>
                   <p>+966 560 509 388</p>
                 </div>
@@ -1185,36 +1187,21 @@
 
     </main>
 
-    {{-- <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">FlexStart</span>
+            <span class="sitename">CxStations</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Egypt</p>
+            <p>Saudi Arabia</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+966 560 509 388</span></p>
+            <p><strong>Email:</strong> <span>info@cxstations.com</span></p>
           </div>
         </div>
 
@@ -1224,17 +1211,17 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            {{-- <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li> --}}
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Enhancing spread through social networks</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Improve customer experience</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Comprehensive support for all types of businesses</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Personalized ads</a></li>
           </ul>
         </div>
 
@@ -1242,10 +1229,10 @@
           <h4>Follow Us</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/cxstations"><i class="bi bi-twitter-x"></i></a>
+            {{-- <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a> --}}
+            <a href="https://www.linkedin.com/company/cx-station-sa/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -1253,17 +1240,13 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">FlexStart</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cxstations</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
       </div>
     </div>
 
-  </footer> --}}
+  </footer>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
