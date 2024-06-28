@@ -157,5 +157,9 @@ strategies.',
 'Testimonials11'=>'  Thanks to the skills and capabilities of our team members, we consistently stand out in delivering unique solutions and providing exceptional customer experiences that position us as leaders in the market.',
 
 'Testimonials12'=>'Uniqueness and Excellence',
+'name'=>'Your name',
+'email'=>'Your email',
+'subject'=>'Subject',
+'message'=>'Message',
 
 ];
