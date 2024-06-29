@@ -231,7 +231,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
-                            <div>
+                            <div  style="margin-right: 20px;">
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
                                 <p>{{ trans('mycustom.stats1') }}
                                     </p>
@@ -243,7 +243,7 @@
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-credit-card-2-front color-purple flex-shrink-0"
                                 style="color: #ee6c20;"></i>
-                            <div>
+                            <div  style="margin-right: 20px;">
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
                                 <p>{{ trans('mycustom.stats2') }}</p>
                             </div>
@@ -254,7 +254,7 @@
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
                             <br>
-                            <div>
+                            <div  style="margin-right: 20px;">
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
                                 <p>{{ trans('mycustom.stats3') }}</p>
                             </div>
@@ -264,7 +264,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item d-flex align-items-center w-100 h-100">
                             <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
-                            <div>
+                            <div  style="margin-right: 20px;">
                                 <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
                                 <p>{{ trans('mycustom.stats4') }}</p>
                             </div>
