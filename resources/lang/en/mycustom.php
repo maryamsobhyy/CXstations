@@ -5,10 +5,9 @@ return [
     'Services'=>'Services',
     'Language'=>'Languages',
     'Started'=>'Request a demo',
-    'hero1'=>'Earn your customers loyalty and enhance your brand experience with Cx Stations',
-    'hero2'=>'Discover how to improve your customers
-                             experience and achieve greater success without spending huge amounts of money on advertising. With Cx Stations,
-                             we give you tools and features that ensure increased customer satisfaction and loyalty to your brand. Join us today to start your journey of success',
+    'hero1'=>'Discover a world vibrant with experience and sharing',
+    'hero2'=>'The leading platform for improving customer experience and enhancing their loyalty towards brands
+We provide you with tools and features that help you increase customer satisfaction and loyalty to your brand.',
     'About Us'=>'About Us',
     'about1'=>'cx stations is a dynamic marketing platform dedicated to harnessing community engagement
                                 and customer intelligence to elevate brand loyalty and advocacy.',
