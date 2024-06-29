@@ -126,7 +126,7 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h3 data-aos="fade-up">{{ trans('mycustom.hero1') }}</h3>
+                        <h2 data-aos="fade-up">{{ trans('mycustom.hero1') }}</h2>
                         <p data-aos="fade-up" data-aos-delay="100">{{ trans('mycustom.hero2') }}
                             </p>
                         <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
