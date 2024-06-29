@@ -152,7 +152,7 @@
                         data-aos-delay="200">
                         <div class="content">
                             <h2>{{ trans('mycustom.About Us') }}</h2>
-                            <h3>{{ trans('mycustom.about1') }}</h3>
+                            <p>{{ trans('mycustom.about1') }}</p>
                             <p>{{ trans('mycustom.about2') }}
 
                             </p>
@@ -180,9 +180,10 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>{{ trans('mycustom.Join us') }}</h2>
-                <p> {{ trans('mycustom.Join us1') }}<br></p>
-            </div><!-- End Section Title -->
+                <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.Join us') }}</h2>
+                <p>{{ trans('mycustom.Join us1') }}<br></p>
+            </div>
+            <!-- End Section Title -->
 
             <div class="container">
 
@@ -297,37 +298,39 @@
                   <div class="row align-self-center gy-4">
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                      <div class="feature-box d-flex align-items-center">
-                        <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features3') }}</h3>
-                      </div>
-                    </div><!-- End Feature Item -->
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check" ></i> <!-- يمكنك تعديل 20px حسب المسافة التي تفضلها -->
+                            <h3 style="margin-right: 20px;">{{ trans('mycustom.features3') }}</h3>
+                        </div>
+                    </div>
+
+                    <!-- End Feature Item -->
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                       <div class="feature-box d-flex align-items-center">
                         <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features4') }}</h3>
+                        <h3 style="margin-right: 20px;">{{ trans('mycustom.features4') }}</h3>
                       </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                       <div class="feature-box d-flex align-items-center">
                         <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features5') }}</h3>
+                        <h3 style="margin-right: 20px;">{{ trans('mycustom.features5') }}</h3>
                       </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                       <div class="feature-box d-flex align-items-center">
                         <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features6') }}</h3>
+                        <h3 style="margin-right: 20px;">{{ trans('mycustom.features6') }}</h3>
                       </div>
                     </div><!-- End Feature Item -->
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
                       <div class="feature-box d-flex align-items-center">
                         <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features7') }}
+                        <h3 style="margin-right: 20px;">{{ trans('mycustom.features7') }}
                           </h3>
                       </div>
                     </div><!-- End Feature Item -->
@@ -335,7 +338,7 @@
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
                       <div class="feature-box d-flex align-items-center">
                         <i class="bi bi-check"></i>
-                        <h3>{{ trans('mycustom.features8') }}</h3>
+                        <h3 style="margin-right: 20px;">{{ trans('mycustom.features8') }}</h3>
                       </div>
                     </div><!-- End Feature Item -->
 
@@ -360,17 +363,17 @@
                         <div class="row align-self-center gy-5">
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-award"></i>
-                                <div>
+                                <i class="bi bi-people"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile1') }}</h4>
-                                    <p>{{ trans('mycustom.mobile2') }}
+                                    <p >{{ trans('mycustom.mobile2') }}
                                         </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-card-checklist"></i>
-                                <div>
+                                <i class="bi bi-shield-lock"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile3') }}</h4>
                                     <p>{{ trans('mycustom.mobile4') }}
                                         </p>
@@ -378,8 +381,8 @@
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-dribbble"></i>
-                                <div>
+                                <i class="bi bi-headset"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile5') }}</h4>
                                     <p>{{ trans('mycustom.mobile6') }}
                                        </p>
@@ -387,8 +390,8 @@
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-filter-circle"></i>
-                                <div>
+                                <i class="bi bi-share"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile7') }}</h4>
                                     <p>{{ trans('mycustom.mobile8') }}
                                        </p>
@@ -396,8 +399,8 @@
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-lightning-charge"></i>
-                                <div>
+                                <i class="bi bi-bar-chart"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile9') }}</h4>
                                     <p>{{ trans('mycustom.mobile10') }}
 
@@ -408,8 +411,8 @@
                             </div><!-- End Feature Item -->
 
                             <div class="col-md-6 icon-box">
-                                <i class="bi bi-patch-check"></i>
-                                <div>
+                                <i class="bi bi-pie-chart"></i>
+                                <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile11') }}</h4>
                                     <p>{{ trans('mycustom.mobile12') }}
                                       </p>
@@ -435,7 +438,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>{{ trans('mycustom.Advantages') }}</h2>
+                <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.Advantages') }}</h2>
                 <p>{{ trans('mycustom.Check Our advantages') }}<br></p>
             </div><!-- End Section Title -->
 
