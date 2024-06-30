@@ -91,7 +91,7 @@
         dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="{{ asset('assets/img/img.png') }}" alt="">
+              <img src="{{ asset('assets/img/img.png') }}" alt="" style="width: 200px; height: 200px;">
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
