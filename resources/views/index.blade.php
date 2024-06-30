@@ -95,11 +95,11 @@
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">{{ trans('mycustom.home') }}</a></li>
-                    <li><a href="#about">{{ trans('mycustom.About') }}</a></li>
-                    <li><a href="#services">{{ trans('mycustom.Services') }}</a></li>
+                    <li><a href="#hero" class="active"  style="font-size:18px">{{ trans('mycustom.home') }}</a></li>
+                    <li><a href="#about" style="font-size:18px">{{ trans('mycustom.About') }}</a></li>
+                    <li><a href="#services" style="font-size:18px">{{ trans('mycustom.Services') }}</a></li>
                     <li class="dropdown">
-                        <a href="#"><span>{{ trans('mycustom.Language') }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <a href="#" style="font-size:18px"><span>{{ trans('mycustom.Language') }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
                             @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <li>

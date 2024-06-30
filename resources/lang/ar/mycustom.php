@@ -1,6 +1,6 @@
 <?php
 return [
-    'home' => 'ggg',
+    'home' => 'الرئيسية',
     'About'=>'من نحن',
     'Services'=>'خدمتنا',
     'Language'=>'اللغات',
