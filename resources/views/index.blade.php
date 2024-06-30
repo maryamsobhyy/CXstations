@@ -114,7 +114,7 @@
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">{{ trans('mycustom.Started') }}</a>
+            <a class="btn-getstarted flex-md-shrink-0" href="#contact">{{ trans('mycustom.Started') }}</a>
         </div>
     </header>
 
