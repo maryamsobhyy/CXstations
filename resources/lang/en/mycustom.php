@@ -13,8 +13,7 @@ We provide you with tools and features that help you increase customer satisfact
     'about2'=>'We strive not only to provide a platform to automate data and indicators, but to build meaningful relationships with customers, keeping your brand always at the forefront through a customer-centric culture.',
     'about3'=>'Read More',
     'Join us'=>'Join us',
-    'Join us1'=>'Contribute your insightful reviews and feedback on previous shopping experiences to earn reward
-                    points',
+    'Join us1'=>'Products specially designed to suit all businesses',
     'Join us2'=>'A premium user experience',
     'Join us3'=>'A distinct user experience through a platform with an easy-to-use interface and attractive design, which facilitates the process of following and understanding indicators and interacting with customers',
     'Join us4'=>'Rewards program',
@@ -64,7 +63,7 @@ We provide you with tools and features that help you increase customer satisfact
     'faq13'=>'Yes, CX Station offers specialized solutions that suit the needs of various sectors,
                                         making it easier for companies to successfully and effectively implement customer experience strategies..',
     'features1'=>'why choose CxStations',
-    'features2'=>'Elevate your customer experience to a new level with CxStations',
+    'features2'=>'A new level with CxStations',
     'features3'=>'Customer-centric culture',
     'features4'=>'Listen to your customers feelings',
     'features5'=>'A comprehensive view of customer interactions',
@@ -116,9 +115,7 @@ ensuring data security during interaction with the app.',
 application, where they can ask questions, provide feedback, and get immediate
 assistance, enhancing overall customer satisfaction.',
 'mobile7'=>'Social Interaction and Engagement',
-'mobile8'=>'The application enhances social interaction through features such as content
-sharing, user comments, and integration with other social networks, fostering
-community building around your brand.',
+'mobile8'=>'The app can enhance social interaction through features such as content sharing, user comments, and interaction with other social networks, enhancing your brand presence.',
 'mobile9'=>'Advanced Data Analytics and Statistics',
 'mobile10'=>'We use advanced analytics tools to accurately understand and interpret big data
 and statistics. This enables clients to make informed strategic decisions based

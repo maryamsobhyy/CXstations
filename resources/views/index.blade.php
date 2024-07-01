@@ -392,13 +392,13 @@
                             <div class="col-md-6 icon-box">
                                 <i class="bi bi-share"></i>
                                 <div style="margin-right: 20px;">
-                                    <h4>{{ trans('mycustom.mobile7') }}</h4>
-                                    <p>{{ trans('mycustom.mobile8') }}
+                                    <h4>{{ trans('mycustom.mobile11') }}</h4>
+                                    <p>{{ trans('mycustom.mobile12') }}
                                        </p>
                                 </div>
                             </div><!-- End Feature Item -->
 
-                            <div class="col-md-6 icon-box">
+                            {{-- <div class="col-md-6 icon-box">
                                 <i class="bi bi-bar-chart"></i>
                                 <div style="margin-right: 20px;">
                                     <h4>{{ trans('mycustom.mobile9') }}</h4>
@@ -417,7 +417,7 @@
                                     <p>{{ trans('mycustom.mobile12') }}
                                       </p>
                                 </div>
-                            </div><!-- End Feature Item -->
+                            </div><!-- End Feature Item --> --}}
 
                         </div>
 
