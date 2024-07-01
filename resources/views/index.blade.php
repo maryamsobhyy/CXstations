@@ -225,7 +225,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-              <h2>{{ trans('mycustom.features1') }} </h2>
+              <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.features1') }} </h2>
               <p>{{ trans('mycustom.features2') }}<br></p>
             </div><!-- End Section Title -->
 
@@ -455,7 +455,7 @@
         </section>
         <section id="alt-features" class="alt-features section">
             <div class="container section-title" data-aos="fade-up">
-                   <h2>{{ trans('mycustom.Alt Features1') }}</h2>
+                   <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.Alt Features1') }}</h2>
                    <p>{{ trans('mycustom.Alt Features2') }}  <br></p>
                    <h4>{{ trans('mycustom.Alt Features3') }}
                      </h4>
@@ -537,104 +537,12 @@
                </section>
         <!-- /Services Section -->
 
-        {{-- <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Check Our Affordable Pricing<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-tem">
-              <h3 style="color: #20c997;">Free Plan</h3>
-              <div class="price"><sup>$</sup>0<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-box" style="color: #20c997;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-tem">
-              <span class="featured">Featured</span>
-              <h3 style="color: #0dcaf0;">Starter Plan</h3>
-              <div class="price"><sup>$</sup>19<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-send" style="color: #0dcaf0;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-tem">
-              <h3 style="color: #fd7e14;">Business Plan</h3>
-              <div class="price"><sup>$</sup>29<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-airplane" style="color: #fd7e14;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pricing-tem">
-              <h3 style="color: #0d6efd;">Ultimate Plan</h3>
-              <div class="price"><sup>$</sup>49<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-rocket" style="color: #0d6efd;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div><!-- End pricing row -->
-
-      </div>
-
-    </section><!-- /Pricing Section --> --}}
-
         <!-- Faq Section -->
         <section id="faq" class="faq section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>F.A.Q</h2>
+                <h2 style="font-size: 20px; margin-bottom: 30px;">F.A.Q</h2>
                 <p>{{ trans('mycustom.faq1') }}</p>
             </div><!-- End Section Title -->
 
@@ -670,6 +578,14 @@
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
+                            <div class="faq-item">
+                                <h3>{{ trans('mycustom.faq14') }}</h3>
+                                <div class="faq-content">
+                                    <p>{{ trans('mycustom.faq15') }}</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
                         </div>
 
                     </div><!-- End Faq Column-->
@@ -701,6 +617,13 @@
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
+                            <div class="faq-item">
+                                <h3>{{ trans('mycustom.faq16') }}</h3>
+                                <div class="faq-content">
+                                    <p>{{ trans('mycustom.faq17') }}</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
 
                         </div>
 
@@ -719,7 +642,7 @@
 
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-            <h2>{{ trans('mycustom.Testimonials1') }}</h2>
+            <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.Testimonials1') }}</h2>
             <p>{{ trans('mycustom.Testimonials2') }}<br></p>
           </div><!-- End Section Title -->
 
@@ -841,370 +764,90 @@
 
         </section>
 
-
-
-        {{-- <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Our hard working team</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section --> --}}
-
-        {{-- <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Clients</h2>
-        <p>We work with best clients<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section --> --}}
-
-        {{-- <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Posts</h2>
-        <p>Recent posts form our Blog</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">July 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Posts Section --> --}}
-
         <!-- Contact Section -->
-    <section id="contact" class="contact section">
+        <section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>{{ trans('mycustom.contact1') }}</h2>
-        <p>{{ trans('mycustom.contact2') }}</p>
-      </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up" style="display: none;">
+              <h2 style="font-size: 20px; margin-bottom: 30px;">{{ trans('mycustom.contact1') }}</h2>
+              <p>{{ trans('mycustom.contact2') }}</p>
+            </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>{{ trans('mycustom.contact3') }}</h3>
-                  <p>{{ trans('mycustom.contact4') }}</p>
-                  <p>{{ trans('mycustom.contact5') }}</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>{{ trans('mycustom.contact6') }}</h3>
-                  <p>{{ trans('mycustom.contact7') }}</p>
-
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>{{ trans('mycustom.contact8') }}</h3>
-                  <p>{{ trans('mycustom.contact9') }}</p>
-
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                    <i class="bi bi-telephone"></i>
-                  <h3>{{ trans('mycustom.contact10') }}</h3>
-                  <p>{{ trans('mycustom.contact11') }}</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <form action="{{ route('contact.send') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                @csrf
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
+                <div class="col-lg-6" style="margin-top: 130px">
+                  <div class="row gy-4">
+                    <div class="col-md-6" style="display: none;">>
+                      <div class="info-item" data-aos="fade" data-aos-delay="200" >
+                        <i class="bi bi-geo-alt"></i>
+                        <h3>{{ trans('mycustom.contact3') }}</h3>
+                        <p>{{ trans('mycustom.contact4') }}</p>
+                        <p>{{ trans('mycustom.contact5') }}</p>
+                      </div>
+                    </div><!-- End Info Item -->
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="{{ trans('mycustom.name') }}" required="">
+                    <div class="col-md-6" style="display: none;">>
+                      <div class="info-item" data-aos="fade" data-aos-delay="300">
+                        <i class="bi bi-telephone"></i>
+                        <h3>{{ trans('mycustom.contact6') }}</h3>
+                        <p>{{ trans('mycustom.contact7') }}</p>
+                      </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                      <div class="info-item" data-aos="fade" data-aos-delay="400">
+                        <i class="bi bi-envelope"></i>
+                        <h3>{{ trans('mycustom.contact8') }}</h3>
+                        <p>{{ trans('mycustom.contact9') }}</p>
+                      </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6" >
+                      <div class="info-item" data-aos="fade" data-aos-delay="500">
+                        <i class="bi bi-telephone"></i>
+                        <h3>{{ trans('mycustom.contact10') }}</h3>
+                        <p>{{ trans('mycustom.contact11') }}</p>
+                      </div>
+                    </div><!-- End Info Item -->
+
+                  </div>
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="{{ trans('mycustom.email') }}" required="">
-                </div>
+                <div class="col-lg-6">
+                  <form action="{{ route('contact.send') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                    @csrf
+                    <div class="row gy-4">
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="{{ trans('mycustom.name') }}" required="">
+                      </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="{{ trans('mycustom.subject') }}" required="">
-                </div>
+                      <div class="col-md-6 ">
+                        <input type="email" class="form-control" name="email" placeholder="{{ trans('mycustom.email') }}" required="">
+                      </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="{{ trans('mycustom.message') }}" required=""></textarea>
-                </div>
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="{{ trans('mycustom.subject') }}" required="">
+                      </div>
 
-                <div class="col-md-12 text-center">
-                    <button type="submit">{{ trans('mycustom.contact12') }}</button>
-                    <div id="loadingMessage" class="loading" style="display: none;">Loading...</div>
-                    <div id="errorMessage" class="error-message" style="background-image: linear-gradient(to right, green, green);"></div>
-                    <div id="sentMessage" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                    {{-- <button type="submit" style="background-image: linear-gradient(to right, #F0A500, orange);">تم ارسال الايميل بنجاح</button> --}}
-                </div>
+                      <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="6" placeholder="{{ trans('mycustom.message') }}" required=""></textarea>
+                      </div>
+
+                      <div class="col-md-12 text-center">
+                        <button type="submit">{{ trans('mycustom.contact12') }}</button>
+                        <div id="loadingMessage" class="loading" style="display: none;">Loading...</div>
+                        <div id="errorMessage" class="error-message" style="background-image: linear-gradient(to right, green, green);"></div>
+                        <div id="sentMessage" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                        {{-- <button type="submit" style="background-image: linear-gradient(to right, #F0A500, orange);">تم ارسال الايميل بنجاح</button> --}}
+                      </div>
+
+                    </div>
+                  </form>
+                </div><!-- End Contact Form -->
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+            </div>
+          </section><!-- /Contact Section --><!-- /Contact Section -->
 
     </main>
 
@@ -1219,8 +862,8 @@
             <span class="sitename">{{ trans('mycustom.footer1') }}</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>{{ trans('mycustom.contact4') }}</p>
-            <p>{{ trans('mycustom.contact5') }}</p>
+            {{-- <p>{{ trans('mycustom.contact4') }}</p> --}}
+            {{-- <p>{{ trans('mycustom.contact5') }}</p> --}}
             <p class="mt-3"><strong>{{ trans('mycustom.contact2') }}</strong> <span>+966 560 509 388</span></p>
             <p><strong>{{ trans('mycustom.contact8') }}</strong> <span>info@cxstations.com</span></p>
           </div>
@@ -1239,10 +882,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>{{ trans('mycustom.Services') }}</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services3') }}</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services7') }}</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services5') }}</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.services9') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.footer3') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.footer4') }}</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">{{ trans('mycustom.footer5') }}</a></li>
           </ul>
         </div>
 
