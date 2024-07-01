@@ -220,63 +220,6 @@
             </div>
 
         </section><!-- /Values Section -->
-
-        <!-- Stats Section -->
-        <section id="stats" class="stats section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-cash-stack color-green flex-shrink-0"></i>
-                            <div  style="margin-right: 20px;">
-                                <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>{{ trans('mycustom.stats1') }}
-                                    </p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-credit-card-2-front color-purple flex-shrink-0"
-                                style="color: #ee6c20;"></i>
-                            <div  style="margin-right: 20px;">
-                                <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>{{ trans('mycustom.stats2') }}</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-chat-dots color-green flex-shrink-0" style="color: #15be56;"></i>
-                            <br>
-                            <div  style="margin-right: 20px;">
-                                <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>{{ trans('mycustom.stats3') }}</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-gift color-blue flex-shrink-0" style="color: #bb0852;"></i>
-                            <div  style="margin-right: 20px;">
-                                <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
-                                <p>{{ trans('mycustom.stats4') }}</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                </div>
-
-            </div>
-
-        </section><!-- /Stats Section -->
-
         <!-- Features Section -->
         <section id="features" class="features section">
 
@@ -527,7 +470,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-award"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features4') }}
                                </h4>
                              <p>{{ trans('mycustom.Alt Features5') }}</p>
@@ -536,7 +479,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-card-checklist"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features6') }}</h4>
                              <p>{{ trans('mycustom.Alt Features7') }}
                                </p>
@@ -545,7 +488,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-dribbble"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features8') }}
                                </h4>
                              <p>{{ trans('mycustom.Alt Features9') }} </p>
@@ -554,7 +497,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-filter-circle"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features10') }} </h4>
                              <p>{{ trans('mycustom.Alt Features11') }}
                               </p>
@@ -563,7 +506,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-lightning-charge"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features12') }} </h4>
                              <p>{{ trans('mycustom.Alt Features13') }}
 
@@ -573,7 +516,7 @@
 
                          <div class="col-md-6 icon-box">
                            <i class="bi bi-patch-check"></i>
-                           <div>
+                           <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features14') }}</h4>
                              <p>{{ trans('mycustom.Alt Features15') }}</p>
                            </div>
