@@ -167,7 +167,7 @@
                     </div>
 
                     <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="{{ asset('assets/img/aboutt.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('assets/img/aboutuss.png') }}" class="img-fluid" alt="" style="width: 400px">
                     </div>
 
                 </div>
@@ -191,7 +191,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
-                            <img src="{{ asset('assets/img/1.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/users.png') }}" class="img-fluid" alt="">
                             <h3>{{ trans('mycustom.Join us2') }}</h3>
                             <p>{{ trans('mycustom.Join us3') }}</p>
                         </div>
@@ -199,7 +199,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
-                            <img src="{{ asset('assets/img/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/rewards.png') }}" class="img-fluid" alt="">
                             <h3>{{ trans('mycustom.Join us4') }}</h3>
                             <p>{{ trans('mycustom.Join us5') }}
                             </p>
@@ -208,7 +208,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
-                            <img src="{{ asset('assets/img/3.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/marketing.png') }}" class="img-fluid" alt="">
                             <h3>{{ trans('mycustom.Join us6') }}</h3>
                             <p>{{ trans('mycustom.Join us7') }}
                                 </p>
@@ -391,7 +391,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item item-cyan position-relative">
-                            <i class="bi bi-chat-left-dots icon"></i>
+                            <i class="bi bi-bullseye icon"></i>
                             <h3>{{ trans('mycustom.services1') }}</h3>
                             <p>{{ trans('mycustom.services2') }}
 
@@ -402,7 +402,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item item-orange position-relative">
-                            <i class="bi bi-broadcast icon"></i>
+                            <i class="bi bi-question-circle icon" style="color: #FF5733;"></i>
                             <h3>{{ trans('mycustom.services3') }}</h3>
                             <p>{{ trans('mycustom.services4') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
@@ -421,7 +421,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item item-red position-relative">
-                            <i class="bi bi-emoji-laughing icon"></i>
+                            <i class="bi bi-graph-up icon" style="color: #F44336;"></i>
                             <h3>{{ trans('mycustom.services7') }}</h3>
                             <p>{{ trans('mycustom.services8') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
@@ -430,7 +430,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-item item-indigo position-relative">
-                            <i class="bi bi-chat-left-text icon"></i>
+                            <i class="bi bi-plus-circle icon" style="color: #6610f2;"></i>
                             <h3>{{ trans('mycustom.services9') }}</h3>
                             <p>{{ trans('mycustom.services10') }}</p>
                             {{-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
@@ -440,7 +440,7 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-item item-pink position-relative">
-                            <i class="bi bi-graph-up-arrow icon"></i>
+                            <i class="bi bi-lock-fill icon" style="color: #007bff;"></i>
                             <h3>{{ trans('mycustom.services11') }} </h3>
                             <p>{{ trans('mycustom.services12') }}
                                 </p>
@@ -469,7 +469,7 @@
                        <div class="row align-self-center gy-5">
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-award"></i>
+                           {{-- <i class="bi bi-award"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features4') }}
                                </h4>
@@ -478,7 +478,7 @@
                          </div><!-- End Feature Item -->
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-card-checklist"></i>
+                           {{-- <i class="bi bi-card-checklist"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features6') }}</h4>
                              <p>{{ trans('mycustom.Alt Features7') }}
@@ -487,7 +487,7 @@
                          </div><!-- End Feature Item -->
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-dribbble"></i>
+                           {{-- <i class="bi bi-dribbble"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features8') }}
                                </h4>
@@ -496,7 +496,7 @@
                          </div><!-- End Feature Item -->
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-filter-circle"></i>
+                           {{-- <i class="bi bi-filter-circle"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features10') }} </h4>
                              <p>{{ trans('mycustom.Alt Features11') }}
@@ -505,7 +505,7 @@
                          </div><!-- End Feature Item -->
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-lightning-charge"></i>
+                           {{-- <i class="bi bi-lightning-charge"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features12') }} </h4>
                              <p>{{ trans('mycustom.Alt Features13') }}
@@ -515,7 +515,7 @@
                          </div><!-- End Feature Item -->
 
                          <div class="col-md-6 icon-box">
-                           <i class="bi bi-patch-check"></i>
+                           {{-- <i class="bi bi-patch-check"></i> --}}
                            <div  style="margin-right: 20px;">
                              <h4>{{ trans('mycustom.Alt Features14') }}</h4>
                              <p>{{ trans('mycustom.Alt Features15') }}</p>

@@ -26,23 +26,19 @@ We provide you with tools and features that help you increase customer satisfact
     'stats4'=>'Convert your points into a purchase voucher',
     'Advantages'=>'Advantages',
     'Check Our advantages'=>'Check Our advantages',
-    'services1'=>'Points and rewards system',
-    'services2'=>'Attract your existing and new customers with an innovative points earning system. Every like, comment, and share brings them points that they can redeem for attractive rewards.
-                            Boost engagement with your brand and encourage your customers to actively participate to enhance loyalty.',
-    'services3'=>'Enhancing spread through social networks',
-    'services4'=>'Leverage the power of social networks to increase exposure and engagement with your brand. The more your customers share your content, the more likely you are to reach a wider audience.
-                                Save money and effort on traditional advertising by using a mechanism based on organic engagement and virality.',
+    'services1'=>'Customize marketing campaigns',
+    'services2'=>'CXStation helps businesses customize their marketing campaigns based on ratings and reviews, which increases the effectiveness of campaigns and contributes to achieving better results.',
+    'services3'=>'Ongoing support and guidance',
+    'services4'=>'CXStation is distinguished by providing continuous support and guidance to companies, ensuring that they achieve the best results and face any challenges they may face during their marketing journey.',
     'services5'=>'Improve customer experience',
     'services6'=>'Give your customers a smooth and enjoyable experience that will keep them coming back. With Cx Stations, we help you understand your customers needs and improve your services based on their feedback and interaction.
                                 Get accurate and detailed reports on customer interaction, enabling you to make informed decisions to improve your services and products.',
-    'services7'=>'Personalized ads',
-    'services8'=>'Post your brand ads on our app pages or on our homepage. Take advantage of our broad user base to increase awareness of your brand and improve engagement with it.
-                                Target customers based on their preferences and behavior to ensure your messages reach the right audience.',
-    'services9'=>'Comprehensive support for all types of businesses',
-    'services10'=> 'Whether you run an online store, restaurant, or any other type of business, Cx Stations provides the right solutions for your needs. We are here to support your growth and success.
-                                Customize services and features to suit your business type and target audience, ensuring the best results',
-    'services11'=> 'You can also through us',
-    'services12'=> 'You can also increase your sales and build a stronger brand through us',
+    'services7'=>'Detailed periodic reports',
+    'services8'=>'CXStation provides detailed periodic reports that help companies monitor the performance of their marketing campaigns and evaluate the effectiveness of their strategies.',
+    'services9'=>'Increase sales and revenues',
+    'services10'=> 'With customized marketing strategies and reviews analysis, CXStation helps businesses increase their sales and achieve higher revenues by improving customer experience and enhancing customer loyalty.',
+    'services11'=> 'Data protection and information security',
+    'services12'=> 'CXStation ensures data protection and information security by adopting the highest security and protection standards to maintain the confidentiality and privacy of customer data',
     'faq1'=>'Frequently Asked Questions',
     'faq2'=>'What is CX Station and what does it offer?',
     'faq3'=>'It is a leading platform that aims to improve the customer experience for brand and store owners. We provide innovative solutions that help enhance communication between companies and their customers,
